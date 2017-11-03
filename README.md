@@ -1,3 +1,6 @@
+---
+title: Speed Design Patterns
+---
 # Speed Design Patterns
 
 This is a list of patterns and anti-patterns to use in speed design.
