@@ -1,6 +1,4 @@
-# Speed Design Patterns
-
-This is a list of patterns and anti-patterns to use in speed design.
+List of patterns and anti-patterns to use in speed design.
 
 ## Fast Start (first paint)
 ## Fix Layout
