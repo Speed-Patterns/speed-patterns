@@ -1,9 +1,2 @@
 theme: jekyll-theme-architect
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      site:
-        title: Speed Patters
+title: "Speed Patters"
