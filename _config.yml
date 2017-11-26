@@ -1,2 +1,5 @@
 theme: jekyll-theme-architect
 title: "Speed Patterns"
+collections:
+  patterns:
+    output: true
