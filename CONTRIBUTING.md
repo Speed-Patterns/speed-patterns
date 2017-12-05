@@ -8,7 +8,9 @@ To help others get a headstart in understanding the pattern, you can collect som
 * Links to existing blog posts, articles, videos describing the issues or solutions to the problem
 * Links to web sites that already successfully implement the pattern
 * Illustrations of the problems in the form of screen grabs or videos / animated GIFs showing successes and failures to implement the pattern
-* Technical documentation helping identify the properly followed pattern, e.g. waterfall charts and filmstrips. Links to [WebPageTest](http://www.webpagetest.org/) test results help a lot
+* Technical documentation helping identify the properly followed pattern, e.g. waterfall charts and filmstrips. Links to [WebPageTest](http://www.webpagetest.org/) test results help a lot.
+
+You can mark submissions that are in early stages of definition and need more active help using [`draft`](https://github.com/Speed-Patterns/speed-patterns/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22New+Pattern%22+label%3Adraft) label.
 
 ## 2. Help formulating new patterns
 It takes some good conversation to describe a design pattern to make sure it is well established and has legs, please help by reviewing and leaving comments on [existing submissions](https://github.com/Speed-Patterns/speed-patterns/issues) and [pull requests](https://github.com/Speed-Patterns/speed-patterns/pulls).
