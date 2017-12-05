@@ -13,8 +13,10 @@ Below is the list of common speed design problems and their design solutions. We
 ## <a href="{{ pattern.url }}">{{ pattern.title }}</a>
 {% endfor %}
 
-## Masking Slowness With Animation
-## Convert on Arrival
-## Enhance Fonts As They Load
-## Acknowledge Actions
-## Use Styles Instead Of Images
+
+## Contributing
+Help us add more patterns!
+
+Submit new patterns to the issue tracker, help existing submissions by collecting articles and examples of implementation.
+
+See [Contribution Guide](https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTING.md) on our [GitHub repo](https://github.com/Speed-Patterns/speed-patterns).

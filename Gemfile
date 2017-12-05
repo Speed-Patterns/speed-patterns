@@ -1,3 +1,4 @@
 source "https://rubygems.org"
 
-gem "github-pages", 166
+gem "jekyll"
+gem "jekyll-seo-tag"

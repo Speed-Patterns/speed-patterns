@@ -1,5 +1,11 @@
-theme: jekyll-theme-architect
 title: "Speed Patterns"
+
+github:
+  repository_url: "https://github.com/Speed-Patterns/speed-patterns"
+  is_project_page: true
+
 collections:
   patterns:
     output: true
+plugins:
+  - jekyll-seo-tag
