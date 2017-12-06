@@ -12,6 +12,11 @@ To help others get a headstart in understanding the pattern, you can collect som
 
 You can mark submissions that are in early stages of definition and need more active help using [`draft`](https://github.com/Speed-Patterns/speed-patterns/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22New+Pattern%22+label%3Adraft) label.
 
+### License
+By contributing to this project, you agree that your work will be shared under Creative Commons Lincense [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+Please help us attribute your work properly by adding your name to [CONTRIBUTORS](https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTORS.md) file
+
 ## 2. Help formulating new patterns
 It takes some good conversation to describe a design pattern to make sure it is well established and has legs, please help by reviewing and leaving comments on [existing submissions](https://github.com/Speed-Patterns/speed-patterns/issues) and [pull requests](https://github.com/Speed-Patterns/speed-patterns/pulls).
 
