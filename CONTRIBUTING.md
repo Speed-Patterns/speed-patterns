@@ -13,7 +13,7 @@ To help others get a headstart in understanding the pattern, you can collect som
 You can mark submissions that are in early stages of definition and need more active help using [`draft`](https://github.com/Speed-Patterns/speed-patterns/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22New+Pattern%22+label%3Adraft) label.
 
 ### License
-By contributing to this project, you agree that your work will be shared under Creative Commons Lincense [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+By contributing to this project, you agree that your work will be shared under [Creative Commons Attribution 4.0 International Lincense](https://creativecommons.org/licenses/by/4.0/) [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
 Please help us attribute your work properly by adding your name to [CONTRIBUTORS](https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTORS.md) file
 
