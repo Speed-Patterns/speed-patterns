@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: layout.njk
 title: Fast Start
+tags: pattern
 ---
 # {{ page.title }}
 
@@ -11,20 +12,20 @@ This delay manifests itself in waiting for first piece of the UI to be painted o
 On this filmstrip, previous page is shown as white:
 <figure>
 <figcaption>Slow first paint filmstrip</figcaption>
-<img src="{{ "/assets/slow_paint_filmstrip.png" | absolute_url }}" width="100%" alt="Slow first paint filmstrip"/>
+<img src="/assets/slow_paint_filmstrip.png" width="100%" alt="Slow first paint filmstrip"/>
 </figure>
 
 The usual cause for such delays are either a bottleneck of a first request for HTML page:
 <figure>
 <figcaption>Slow first request</figcaption>
-<img src="{{ "/assets/slow_first_request.png" | absolute_url }}" width="100%" alt="Slow first request"/>
+<img src="/assets/slow_first_request.png" width="100%" alt="Slow first request"/>
 </figure>
 
 Alternatively, delay can be caused by various render-blocking assets loaded on the page, like CSS stylesheets, fonts or pure rendering delays due to time-consuming layout and painting or JavaScript compilation and execution that compete for same CPU resources:
 
 <figure>
 <figcaption>Delayed first paint</figcaption>
-<img src="{{ "/assets/slow_first_paint.png" | absolute_url }}" width="100%" alt="Delayed first paint"/>
+<img src="/assets/slow_first_paint.png" width="100%" alt="Delayed first paint"/>
 </figure>
 
 ## Solution

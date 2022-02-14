@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: layout.njk
 title: Immutable Layout
+tags: pattern
 ---
 # {{ page.title }}
 
@@ -10,7 +11,7 @@ This is particularly noticeable by users when they start scrolling down the page
 
 <figure>
 <figcaption>Pushy ad</figcaption>
-<img src="{{ "/assets/pushy_ads.gif" | absolute_url }}" width="400" height="295" alt="Pushy ad"/>
+<img src="/assets/pushy_ads.gif" width="400" height="295" alt="Pushy ad"/>
 </figure>
 
 ## Solution
@@ -18,7 +19,7 @@ Instead of shifting the layout, always set the expected size of the available sp
 
 <figure>
 <figcaption>Expected ad</figcaption>
-<img src="{{ "/assets/expected_ads.gif" | absolute_url }}" width="400" height="295" alt="Expected ad"/>
+<img src="/assets/expected_ads.gif" width="400" height="295" alt="Expected ad"/>
 </figure>
 
 Use CSS to set height/width of the container when loading element into it and for images, simply specify width and height directly on a tag so layout engine doesn't have to wait for image bytes to come back from the network to determine its pixel dimensions.
