@@ -3,7 +3,7 @@ layout: layout.njk
 title: Immutable Layout
 tags: pattern
 ---
-# {{ page.title }}
+# {{ title }}
 
 A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
 

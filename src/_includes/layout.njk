@@ -12,11 +12,67 @@
     </head>
     <body>
 
-        <nav>
+        <header>
             <a href="/">Speed Patterns</a>
-        </nav>
-        <!-- Grab the content from the page data, dump it here, and mark it as safe -->
-        <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
-        {{ content | safe }}
+        </header>
+
+        <main>
+            {{ content | safe }}
+        </main>
+        <aside id="sidebar">
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            </p>
+
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/Speed-Patterns/speed-patterns">Our repo on GitHub</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTING.md">Contribution Guide</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Speed-Patterns/speed-patterns/issues">Issue tracker</a>
+                </li>
+            </ul>
+
+            <h3>Sister sites</h3>
+            <p>Some sites to help you with your preforamance adventure:</p>
+            <ul>
+                <li>
+                    <a href="https://wpostats.com/">WPO Stats</a> - collection of useful white papers with effect of speed on business KPIs</li>
+                <li>
+                    <a href="https://whatdoesmysitecost.com/">What Does My Site Cost?</a> - tool to estimate the cost for the user loading your pages</li>
+                <li>
+                    <a href="http://www.slownesskills.com/">Slowness Kills</a> - helps your motivation if money is not enough of the motivator</li>
+            </ul>
+
+            <h3>Even more links</h3>
+            <ul>
+                <li>
+                    <a href="http://www.perfplanet.com/">PerfPlanet</a> - blog aggregator from performance-related bloggers</li>
+                <li>
+                    <a href="http://calendar.perfplanet.com/">PerfPlanet Calendar</a> - collection of articles about web performance in PerfPlanet's advent calendars for almost a decade</li>
+                <li>
+                    <a href="https://www.pinterest.com/perfplanet/">PerfPlanet Pinterest</a> - collection of books, inforgraphics and other speed-related info</li>
+                <li>
+                    <a href="http://www.webpagetest.org/">WebPageTest</a> - best tool for performance analysis</li>
+            </ul>
+
+            <h3>Contributors</h3>
+            <ul>
+                <li>
+                    <a href="https://www.sergeychernyshev.com/">Sergey Chernyshev</a>
+                </li>
+                <li>... add your name <a href="https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTING.md">here</a>
+                </li>
+            </ul>
+
+            <h3>Attribution</h3>
+            <p>Theme built by <a href="https://www.alexchernyshev.com/">Alexander Chernyshev</a> using <a href="https://www.11ty.dev/">11ty</a>.
+            </p>
+
+        </aside>
     </body>
 </html>

@@ -3,7 +3,7 @@ layout: layout.njk
 title: Fast Start
 tags: pattern
 ---
-# {{ page.title }}
+# {{ title }}
 
 Before user can start the experience, there is an inevitable delay as user's browser goes away from previous view to the current view.
 
