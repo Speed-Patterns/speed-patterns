@@ -1,0 +1,45 @@
+:root {
+    --header-color: #fff4de;
+}
+
+body {
+    margin: 0;
+    background-color: #fff9ed;
+    display: grid;
+
+
+}
+
+header {
+    background-color: #2D3866;
+    padding: 1em;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+header a:visited {
+    color: var(--header-color);
+}
+
+a {
+    color: #4F63B3;
+}
+
+a:visited {
+    color: #2D3866;
+}
+
+main {
+    padding: 3em;
+}
+
+.sidebar {
+    padding: 2em;
+}
