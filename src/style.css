@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: #fff9ed;
     display: grid;
-
+    gap: 2em 2em;
 
 }
 
@@ -17,6 +17,8 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    grid-row: 1/2;
+    grid-column: 1/10;
 }
 
 header a {
@@ -37,9 +39,13 @@ a:visited {
 }
 
 main {
-    padding: 3em;
+    padding: 1em;
+    grid-row: 2/3;
+    grid-column: 1/9;
 }
 
 .sidebar {
-    padding: 2em;
+    padding: 1em;
+    grid-column: 9/10;
+    grid-row: 2/3;
 }
