@@ -79,6 +79,12 @@ main {
         height: 100%;
     }
 
+    #homepage {
+        grid-template-columns: 0 6fr 2fr;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+    }
+
     header {
         grid-row: 1/2;
         grid-column: 1/4;
@@ -97,5 +103,9 @@ main {
     nav {
         grid-row: 2/3;
         grid-column: 1/2;
+    }
+
+    #homepage nav {
+        display: none;
     }
 }
