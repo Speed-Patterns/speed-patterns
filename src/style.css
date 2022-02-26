@@ -2,6 +2,10 @@
     --header-color: #fff8eb;
 }
 
+header img {
+    margin-right: 0.5em;
+}
+
 body {
     margin: 0;
     background-color: #fff9ed;
@@ -25,6 +29,8 @@ nav ul {
 }
 
 header {
+    display: flex;
+    align-items: center;
     background-color: #2D3866;
     padding: 1em;
     font-size: 2em;
