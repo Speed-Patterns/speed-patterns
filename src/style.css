@@ -2,8 +2,17 @@
     --header-color: #fff8eb;
 }
 
-header img {
+.logo {
     margin-right: 0.5em;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    margin-left: 0.5em;
 }
 
 body {
@@ -37,6 +46,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    justify-content: space-between;
 }
 
 header a {
@@ -114,4 +124,9 @@ main {
     #homepage nav {
         display: none;
     }
+
+    .burger {
+        display: none;
+    }
+
 }

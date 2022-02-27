@@ -12,9 +12,23 @@
     <body {% if id %} id="{{id}}"{%endif%}>
 
         <header>
-            <img src="/assets/no_spinners_animated.svg" width="70">
-            <a href="/">Speed Patterns</a>
+            <span>
+                <img class="logo" src="/assets/no_spinners_animated.svg" width="70">
+                <a href="/">Speed Patterns</a>
+            </span>
+            <img class="burger" src="/assets/speed_patterns_burger_menu.svg" width ="60">
         </header>
+
+        <script>
+            document
+                .querySelector(".burger")
+                .addEventListener("click", function () {
+                    document
+                        .querySelector("nav")
+                        .classList
+                        .toggle("mobile-hidden")
+                })
+        </script>
 
         <nav class="mobile-hidden">
             <ul>
