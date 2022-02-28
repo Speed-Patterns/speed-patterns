@@ -11,6 +11,10 @@ header span {
     align-items: center;
 }
 
+.githublink {
+    margin-left: 0.5em;
+}
+
 .burger {
     margin-left: 0.5em;
 }
