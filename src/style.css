@@ -15,13 +15,34 @@ header span {
     margin-left: 0.5em;
 }
 
+.speed-pattern {
+    margin-top: 1em;
+}
+
+.speed-pattern h2 {
+    margin-top: 0;
+    background-color: #f0e6d3;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.contributing {
+    background-color: #f0e6d3;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.contributing h2 {
+    margin-top: 0;
+}
+
 .burger {
     margin-left: 0.5em;
 }
 
 body {
     margin: 0;
-    background-color: #fff9ed;
+    background-color: white;
     display: grid;
     gap: 0;
 }
@@ -71,7 +92,7 @@ a:visited {
 }
 
 main {
-    padding: 1em;
+    padding: 1em 3em 2em 3em;
 }
 
 .sidebar {

@@ -2,7 +2,13 @@
 layout: layout.njk
 title: Immutable Layout
 tags: pattern
+thumbnail: /assets/pushy_ads.gif
 ---
+A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
+
+Instead of shifting the layout, always set the expected size of the available space.
+<!-- excerpt -->
+
 # {{ title }}
 
 A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.

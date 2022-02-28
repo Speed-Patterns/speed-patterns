@@ -2,7 +2,12 @@
 layout: layout.njk
 title: Fast Start
 tags: pattern
+thumbnail: /assets/slow_paint_filmstrip.png
 ---
+Before user can start the experience, there is an inevitable delay as user's browser goes away from previous view to the current view.
+
+Making it a requirement to start painting quickly is critical, especially as it competes with other technical and design goals of loading large amounts of code and displaying a large number of elements on the page.
+<!-- excerpt -->
 # {{ title }}
 
 Before user can start the experience, there is an inevitable delay as user's browser goes away from previous view to the current view.
