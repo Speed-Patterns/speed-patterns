@@ -1,0 +1,157 @@
+:root {
+    --header-color: #fff8eb;
+}
+
+.logo {
+    margin-right: 0.5em;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+}
+
+.githublink {
+    margin-left: 0.5em;
+}
+
+.speed-pattern {
+    margin-top: 1em;
+}
+
+.speed-pattern h2 {
+    margin-top: 0;
+    background-color: #f0e6d3;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.contributing {
+    background-color: #f0e6d3;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.contributing h2 {
+    margin-top: 0;
+}
+
+.burger {
+    margin-left: 0.5em;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    display: grid;
+    gap: 0;
+}
+
+nav {
+    padding: 1em;
+    background-color: #f0e6d3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #2D3866;
+    padding: 1em;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+header a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+header a:visited {
+    color: var(--header-color);
+}
+
+a {
+    color: #4F63B3;
+}
+
+a:visited {
+    color: #2D3866;
+}
+
+main {
+    padding: 1em 3em 2em 3em;
+}
+
+.sidebar {
+    padding: 1em;
+    background-color: #f0e6d3;
+}
+
+.home-link {
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 900px) {
+
+    .mobile-hidden {
+        display: block;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        grid-template-columns: 1fr 5fr 2fr;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+    }
+
+    #homepage {
+        grid-template-columns: 0 6fr 2fr;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+    }
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .sidebar {
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+
+    main {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    nav {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    #homepage nav {
+        display: none;
+    }
+
+    .burger {
+        display: none;
+    }
+
+}
