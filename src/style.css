@@ -104,6 +104,14 @@ main {
     font-weight: bolder;
 }
 
+/*
+The screen smushing issue we are trying to fix on the main page happens at 1300 - 1400px.
+Doesn't happen on other pages.
+Simple solution is to change the media query for our breakpoint to 1400px
+Another solutions is to have multiple breakpoints.
+Finally, another harder solution is to have different stylings at the 900 breakpoint for different pages.
+*/
+
 @media screen and (min-width: 900px) {
 
     .mobile-hidden {
