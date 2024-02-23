@@ -36,7 +36,10 @@ This helps reduce cognitive load for users, which reduces the stress of taking i
 ### Reduced Perception Time
 It is not just about the technical aspects of loading the page. With this method we reduce the perception time of the user. Without this technique, the user is unable to prepare for navigating the page, and when it finally loads all at once they must spend more time parsing it before they can use it. Whereas with this technique, the user can be prepared to navigate the page once fully loaded, and needs less time to get their bearings and start using the page.
 
-@TODO diagram showing dirstribution of perception over loading time
+<figure>
+<img src="/assets/skeletal_design_perception_time_diagram.svg" height="700" alt="Diagram showing dirstribution of perception over loading time"/>
+<figcaption>Diagram showing dirstribution of perception over loading time</figcaption>
+</figure>
 
 ## Things to avoid
 
