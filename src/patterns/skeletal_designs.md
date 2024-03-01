@@ -4,6 +4,8 @@ title: Skeletal Designs
 tags: pattern
 thumbnail: 
 ---
+Technique introduced by Luke Wroblewsky and used by many sites, including Facebook's and LinkedIn's newsfeeds can be utilized to indicate progress and provide visual cue to what user should expect reducing cognitive load and user's frustration.
+
 <!-- excerpt -->
 # {{ title }}
 
@@ -26,7 +28,7 @@ These cues can be multiple things:
 * the visual layout of the page
 * zones for different content on the page
 
-@TODO show an animated example that combines these items
+@TODO show an animated example that combines these items, or follow https://www.lukew.com/ff/entry.asp?1797 example.
 
 Why are zones important?
 They allow users to do a first pass and understand the structure of the page ahead of time, which allows for easier navigation of the data once the page has fully loaded.
@@ -37,7 +39,7 @@ This helps reduce cognitive load for users, which reduces the stress of taking i
 It is not just about the technical aspects of loading the page. With this method we reduce the perception time of the user. Without this technique, the user is unable to prepare for navigating the page, and when it finally loads all at once they must spend more time parsing it before they can use it. Whereas with this technique, the user can be prepared to navigate the page once fully loaded, and needs less time to get their bearings and start using the page.
 
 <figure>
-<img src="/assets/skeletal_design_perception_time_diagram.svg" height="700" alt="Diagram showing dirstribution of perception over loading time"/>
+<img src="/assets/skeletal_design_perception_time_diagram.svg" width="100%" alt="Diagram showing dirstribution of perception over loading time"/>
 <figcaption>Diagram showing dirstribution of perception over loading time</figcaption>
 </figure>
 
@@ -47,7 +49,9 @@ It is critical to avoid layout shift once content loads. You want to make sure t
 
 @TODO have animated example of layout shift
 
-    [Cumulative Layout Shift](https://web.dev/articles/cls) (CLS) metric that is part of Core Web Vitals is a measure of layout shift and is useful for tracking it for both skeletal designs and during regular page load.
+<p class="callout">
+<a href="https://web.dev/articles/cls">Cumulative Layout Shift</a> (CLS) metric that is part of Core Web Vitals is a measure of layout shift and is useful for tracking it for both skeletal designs and during regular page load.
+</p>
 
 ### Wave-ey Gray Boxes
 
