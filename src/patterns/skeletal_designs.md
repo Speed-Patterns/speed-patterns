@@ -65,6 +65,8 @@ This unfortunate technique was popularized by the need to solve this issue on so
 
 @TODO image here of social network feed
 
+An alternative solution to the gray boxes in this particular case might be to progressively load content without having any skeleton structure. This will show the progress of the page loading by the content appearing on the screen in order, and will not require additional cognitive load to redo the users understanding of the page structure.
+
 ### Do not delay content!
 Needless to say, that skeleton design should only be used when it is necessary to wait for additional content and there is not technical solution for loading the data faster. 
 
