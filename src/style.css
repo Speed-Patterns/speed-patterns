@@ -6,6 +6,25 @@
     margin-right: 0.5em;
 }
 
+.textimagepair {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+@media screen and (max-width: 110em) {
+
+    .textimagepair {
+        flex-direction: column;
+    }
+
+    .textimagepair video {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 .callout {
     background-color: rgb(255, 241, 185);
     border: solid 0.1em rgb(255, 223, 96);

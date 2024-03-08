@@ -45,13 +45,24 @@ It is not just about the technical aspects of loading the page. With this method
 
 ## Things to avoid
 
+<section class="textimagepair">
+<div>
 It is critical to avoid layout shift once content loads. You want to make sure that the zones the users see before the page loads match the final layout. Otherwise users would have to make another pass to readjust to the page structure, defeating the purpose of having the zones during loading, and nullifying the advantages this would provide, namely the user having a map of navigation of the page.
-
-@TODO have animated example of layout shift
 
 <p class="callout">
 <a href="https://web.dev/articles/cls">Cumulative Layout Shift</a> (CLS) metric that is part of Core Web Vitals is a measure of layout shift and is useful for tracking it for both skeletal designs and during regular page load.
 </p>
+</div>
+
+<video muted autoplay loop width="350" height="300">
+<source src="/assets/skeletal_designs_diagrams/speedpatterns_skeletal_design_layout_shift_example.mp4" type="video/mp4"/>
+</video>
+
+
+
+</section>
+
+
 
 ### Wave-ey Gray Boxes
 
