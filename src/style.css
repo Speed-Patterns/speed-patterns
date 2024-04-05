@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     gap: 1em;
+    padding: 2rem;
+    background-color: #fff4de;
 }
 
 @media screen and (max-width: 110em) {
@@ -138,6 +140,7 @@ main {
 
 #homepage .speed-pattern img {
     max-width: 100%;
+    max-height: 10em;
 }
 
 @media screen and (min-width: 75em) {
