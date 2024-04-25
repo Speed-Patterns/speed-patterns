@@ -71,7 +71,7 @@ It is critical to avoid layout shift once content loads. You want to make sure t
 
 </section>
 
-### Wave-ey Gray Boxes
+### Avoid Generic Wave-ey Gray Boxes
 
 <section class="textimagepair">
 
