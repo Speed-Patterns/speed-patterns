@@ -44,7 +44,7 @@ They allow users to do a first pass and understand the structure of the page ahe
 
 </section>
 
-This helps reduce cognitive load for users, which reduces the stress of taking in the site. By having the zones establish their dimensions and prupose at the beginning of the loaing process, and the final content filing in to that structure, the strain of the user to take in the whole is spread out over the loading time and thus reduced. As opposed to having to first wait and recieve no information, and then being hit by a large amount of information and struggling to get your bearings when you would want to start navigating already.
+This helps reduce cognitive load for users, which reduces the stress of taking in the site. By having the zones establish their dimensions and purpose at the beginning of the loading process, and the final content filing in to that structure, the strain of the user to take in the whole is spread out over the loading time and thus reduced. As opposed to having to first wait and receive no information, and then being hit by a large amount of information and struggling to get your bearings when you would want to start navigating already.
 
 ### Reduced Perception Time
 It is not just about the technical aspects of loading the page. With this method we reduce the perception time of the user. Without this technique, the user is unable to prepare for navigating the page, and when it finally loads all at once they must spend more time parsing it before they can use it. Whereas with this technique, the user can be prepared to navigate the page once fully loaded, and needs less time to get their bearings and start using the page.
