@@ -6,6 +6,35 @@
     margin-right: 0.5em;
 }
 
+.textimagepair {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2rem;
+    background-color: #fff4de;
+}
+
+@media screen and (max-width: 110em) {
+
+    .textimagepair {
+        flex-direction: column;
+    }
+
+    .textimagepair video {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.callout {
+    background-color: rgb(255, 241, 185);
+    border: solid 0.1em rgb(255, 223, 96);
+    border-left-width: 1em;
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
 header span {
     display: flex;
     align-items: center;
@@ -111,6 +140,7 @@ main {
 
 #homepage .speed-pattern img {
     max-width: 100%;
+    max-height: 10em;
 }
 
 @media screen and (min-width: 75em) {
