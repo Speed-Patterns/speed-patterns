@@ -143,6 +143,10 @@ main {
     max-height: 10em;
 }
 
+pre {
+    text-wrap: pretty;
+}
+
 @media screen and (min-width: 75em) {
 
     .mobile-hidden {
