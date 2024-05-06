@@ -38,7 +38,7 @@ They allow users to do a first pass and understand the structure of the page ahe
 
 </div>
 
-<video muted autoplay loop>
+<video muted autoplay loop playsinline>
 <source src="/assets/skeletal_designs_diagrams/owlboi2.mp4" type="video/mp4"/>
 </video>
 
@@ -65,7 +65,7 @@ It is critical to avoid layout shift once content loads. You want to make sure t
 </p>
 </div>
 
-<video muted autoplay loop width="350" height="300">
+<video muted autoplay loop width="350" height="300" playsinline>
 <source src="/assets/skeletal_designs_diagrams/graybox_loaded.mp4" type="video/mp4"/>
 </video>
 
@@ -86,7 +86,7 @@ This unfortunate technique was popularized by the need to solve this issue on so
 
 </div>
 
-<video muted autoplay loop>
+<video muted autoplay loop playsinline>
 <source src="/assets/skeletal_designs_diagrams/spsd_social_media_feed_diagram_2image.mp4" type="video/mp4"/>
 </video>
 
