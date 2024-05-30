@@ -3,6 +3,7 @@ layout: article.njk
 title: Immutable Layout
 tags: pattern
 thumbnail: /assets/pushy_ads.gif
+order: 2
 ---
 
 A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
