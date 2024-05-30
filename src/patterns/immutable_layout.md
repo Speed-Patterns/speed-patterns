@@ -1,21 +1,16 @@
 ---
-layout: layout.njk
+layout: article.njk
 title: Immutable Layout
 tags: pattern
 thumbnail: /assets/pushy_ads.gif
+order: 2
 ---
 
 A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
 
-Instead of shifting the layout, always set the expected size of the available space.
+This is particularly noticeable by users when they start scrolling down the page and element at the top of the page (e.g. ad banner or carousel image that finally loaded) suddenly changes it's height pushing content down.
 
 <!-- excerpt -->
-
-# {{ title }}
-
-A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
-
-This is particularly noticeable by users when they start scrolling down the page and element at the top of the page (e.g. ad banner or carousel image that finally loaded) suddenly changes it's height pushing content down.
 
 <figure>
 <figcaption>Pushy ad</figcaption>

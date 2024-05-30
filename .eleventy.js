@@ -1,3 +1,5 @@
+const markdownIt = require("markdown-it");
+
 module.exports = function (eleventyConfig) {
   // Set custom directories for input, output, includes, and data
   eleventyConfig.addPassthroughCopy("src/style.css");
@@ -13,6 +15,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("pattern").sort(function (a, b) {
       return a.data.order - b.data.order;
     });
+  });
+
+  eleventyConfig.addFilter("md", function (content = "") {
+    return markdownIt({ html: true }).render(content);
   });
 
   return {

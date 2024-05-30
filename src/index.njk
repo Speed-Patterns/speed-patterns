@@ -20,7 +20,7 @@ id: homepage
                 {{ post.data.title }}
             </a>
         </h2>
-        <p>{{post.data.page.excerpt}}</p>
+        <p>{{post.data.page.excerpt | md | safe}}</p>
         <a href="{{ post.url }}">
             <img src="{{post.data.thumbnail}}">
         </a>
