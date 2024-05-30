@@ -1,19 +1,17 @@
 ---
-layout: layout.njk
+layout: article.njk
 title: Skeletal Designs
 tags: pattern
 thumbnail: /assets/skeletal_design_perception_time_diagram.svg
 ---
+
 Technique introduced by Luke Wroblewsky and used by many sites, including Facebook's and LinkedIn's newsfeeds can be utilized to indicate progress and provide visual cue to what user should expect reducing cognitive load and user's frustration.
 
 <!-- excerpt -->
-# {{ title }}
-
-Technique introduced by Luke Wroblewsky and used by many sites, including Facebook's and LinkedIn's newsfeeds can be utilized to indicate progress and provide visual cue to what user should expect reducing cognitive load and user's frustration.
 
 ## In-Progress State
 
-This technique allows the *in-progress state* of the page to be helpful to user-experience, rather than a hinderance. 
+This technique allows the _in-progress state_ of the page to be helpful to user-experience, rather than a hinderance.
 
 Defining the in-progress state should be a delibarate part of the design process.
 
@@ -47,6 +45,7 @@ They allow users to do a first pass and understand the structure of the page ahe
 This helps reduce cognitive load for users, which reduces the stress of taking in the site. By having the zones establish their dimensions and purpose at the beginning of the loading process, and the final content filing in to that structure, the strain of the user to take in the whole is spread out over the loading time and thus reduced. As opposed to having to first wait and receive no information, and then being hit by a large amount of information and struggling to get your bearings when you would want to start navigating already.
 
 ### Reduced Perception Time
+
 It is not just about the technical aspects of loading the page. With this method we reduce the perception time of the user. Without this technique, the user is unable to prepare for navigating the page, and when it finally loads all at once they must spend more time parsing it before they can use it. Whereas with this technique, the user can be prepared to navigate the page once fully loaded, and needs less time to get their bearings and start using the page.
 
 <figure>
@@ -80,7 +79,7 @@ Unfortunately, it became common practice to use a simple to build but not good s
 
 In some cases the exact dimesnions are in fact unknown, but in many cases we can know the layout up-front. As such, designers should analyze the content of the page to set dimensions that are known, instead of defaulting to generic solutions or placeholders.
 
-One common exception to this are social media feeds, where we cannot know what *type* of content will be in the feed. 
+One common exception to this are social media feeds, where we cannot know what _type_ of content will be in the feed.
 
 This unfortunate technique was popularized by the need to solve this issue on social networks, which then became taken as standard practice when it should have remained an exception.
 
@@ -95,9 +94,10 @@ This unfortunate technique was popularized by the need to solve this issue on so
 An alternative solution to the gray boxes in this particular case might be to progressively load content without having any skeleton structure. This will show the progress of the page loading by the content appearing on the screen in order, and will not require additional cognitive load to redo the users understanding of the page structure.
 
 ### Do not delay content!
-Needless to say, that skeleton design should only be used when it is necessary to wait for additional content and there is not technical solution for loading the data faster. 
 
-DO NOT artificially create this multi-step process. 
+Needless to say, that skeleton design should only be used when it is necessary to wait for additional content and there is not technical solution for loading the data faster.
+
+DO NOT artificially create this multi-step process.
 
 Spend time investigating technical solutions to load content faster. Only use skeletal designs if there is no alternative.
 
@@ -111,4 +111,4 @@ In particular, this is useful for spaces that will be occupied by images, as ima
 
 ## Resources
 
-* [Mobile Design Details: Avoid The Spinner](https://www.lukew.com/ff/entry.asp?1797) by [Luke Wroblewsky](https://lukew.com/)
+- [Mobile Design Details: Avoid The Spinner](https://www.lukew.com/ff/entry.asp?1797) by [Luke Wroblewsky](https://lukew.com/)
