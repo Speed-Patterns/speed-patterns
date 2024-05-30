@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AlexanderChernyshev/speed-patterns#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "markdown-it": "^14.1.0"
   }
 }
