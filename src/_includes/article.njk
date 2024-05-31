@@ -3,3 +3,9 @@
 {% block title %}
     <h1>{{title}}</h1>
 {% endblock %}
+
+{% block og %}
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta property="og:site_name" content="Speed Patterns">
+{% endblock %}

@@ -8,6 +8,7 @@
         <title>{{ title }}</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="/assets/favicon.png" type="image/png">
+        {% block og %}{% endblock %}
     </head>
     <body {% if id %} id="{{id}}"{%endif%}>
 
