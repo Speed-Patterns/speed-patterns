@@ -3,6 +3,7 @@ layout: article.njk
 title: Immutable Layout
 tags: pattern
 thumbnail: /assets/pushy_ads.gif
+og_image: /assets/pushy_ads.gif
 order: 2
 ---
 

@@ -3,6 +3,7 @@ layout: article.njk
 title: Skeletal Designs
 tags: pattern
 thumbnail: /assets/skeletal_design_perception_time_diagram.svg
+og_image: /assets/skeletal_design_perception_time_diagram.svg
 order: 3
 ---
 
