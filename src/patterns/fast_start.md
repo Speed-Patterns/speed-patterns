@@ -3,7 +3,7 @@ layout: article.njk
 title: Fast Start
 tags: pattern
 thumbnail: /assets/slow_paint_filmstrip.png
-og_image: /assets/slow_paint_filmstrip.png
+og_image: /assets/fast_start_og_image.jpg
 order: 1
 ---
 
