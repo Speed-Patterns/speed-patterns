@@ -21,7 +21,7 @@ Please help us attribute your work properly by adding your name to [CONTRIBUTORS
 It takes some good conversation to describe a design pattern to make sure it is well established and has legs, please help by reviewing and leaving comments on [existing submissions](https://github.com/Speed-Patterns/speed-patterns/issues) and [pull requests](https://github.com/Speed-Patterns/speed-patterns/pulls).
 
 ## 3. Add new pattern page
-When it is clear that the pattern is well established and you collected feedback from other members and maintainers, create a new pattern file in [`/_patterns/`](https://github.com/Speed-Patterns/speed-patterns/tree/master/_patterns) folder and supporting assets in [`/assets/`](https://github.com/Speed-Patterns/speed-patterns/tree/master/assets) folder and open a pull request.
+When it is clear that the pattern is well established and you collected feedback from other members and maintainers, create a new pattern file in [`src/patterns`](https://github.com/Speed-Patterns/speed-patterns/tree/master/src/patterns) folder and supporting assets in [`/src/assets/`](https://github.com/Speed-Patterns/speed-patterns/tree/master/src/assets) folder and open a pull request.
 Please include a link to existing pattern issues to help maintainers get context of the previous conversation.
 
 ## 4. Celebrate and share
