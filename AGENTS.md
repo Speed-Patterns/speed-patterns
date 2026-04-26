@@ -1,12 +1,14 @@
 # AGENTS.md
 
-Guidance for AI coding agents (Claude Code, Cursor, etc.) working in this repo.
+Guidance for AI coding agents working in this repo.
 
 ## Project
 
 **Speed Patterns** — a collection of product / UX / visual design patterns for fast web sites, published at <https://www.speedpatterns.com/>.
 
-The site is aimed at product managers, designers and front-end developers planning speed-aware experiences from inception. Articles concentrate on **user-experience challenges and solutions**, not implementation specifics. Technical detail is supporting material; if a pattern can only be understood through code, it's probably the wrong altitude for this site.
+The site is aimed at product managers, designers and front-end developers planning speed-aware experiences from inception. Articles concentrate on **user-experience challenges and solutions**, not implementation specifics.
+
+Technical detail is supporting material; if a pattern can only be understood through code, it's probably the wrong altitude for this site. If more technical details are written up in an article somewhere, link to it instead, no need to be an authoritative source of technical information.
 
 ## Build
 
@@ -90,7 +92,7 @@ Technical detail belongs at the end of the article. Lead with UX/design content;
 Code samples are highlighted at build time by Prism (via the Eleventy plugin) and themed by CSS in [src/style.css](src/style.css). Each block:
 
 - Has a colored navy background with a brand-blue left-border accent
-- Includes a "Copy" button injected by a small script in [src/_includes/layout.njk](src/_includes/layout.njk)
+- Includes a "Copy" button injected by a small script in [src/\_includes/layout.njk](src/_includes/layout.njk)
 - Token coloring is **CSS only** — never add a runtime JS syntax highlighter
 
 Always tag fenced code blocks with a language (`html`, `css`, `js`, etc.) so Prism can tokenize them.
@@ -109,7 +111,3 @@ Always tag fenced code blocks with a language (`html`, `css`, `js`, etc.) so Pri
 - Don't add runtime syntax highlighters or any other library that does coloring at page load — Prism at build time is the only colorization mechanism
 - Don't put trailing periods on list items
 - Don't introduce CLAUDE.md or other agent-config files without checking first; this AGENTS.md is the canonical agent guidance
-
-## Open questions / future work
-
-_(Section left for the maintainer to fill in.)_
