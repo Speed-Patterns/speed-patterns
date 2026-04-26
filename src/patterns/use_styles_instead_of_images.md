@@ -24,8 +24,8 @@ Every image is a network round-trip, a decode step on the user's CPU, and a layo
 The same visual element shipped two ways: as a 142KB raster image, or as ~120 bytes of CSS. The CSS version is also crisp at any DPI and animatable.
 
 <figure>
-<figcaption>Pixels vs. CSS</figcaption>
 <img src="/assets/styles_not_images_thumbnail.svg" width="400" alt="Side-by-side comparison: a pixelated raster image labeled '142 KB, blurry on retina, slow to render' next to a smooth rounded rectangle labeled 'CSS: ~120 B, crisp at any DPI, animatable'"/>
+<figcaption>Pixels vs. CSS</figcaption>
 </figure>
 
 ## Solution
