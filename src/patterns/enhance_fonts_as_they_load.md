@@ -24,7 +24,30 @@ Pure FOIT is the worse failure mode: the user can't even start reading. But a ca
 
 Treat custom fonts as a progressive enhancement, not a render blocker. Show legible fallback text from the first paint, then upgrade to the branded font when it arrives. Choose the fallback so the swap is as imperceptible as possible.
 
-### 1. Use `font-display: swap` (or `optional`)
+The strategy has three parts:
+
+1. **Show fallback text immediately.** Configure each web font so the browser uses a system fallback while the custom font downloads, instead of hiding the text.
+2. **Match fallback metrics to the custom font.** Pick a system fallback whose size, ascent, descent and line-height align closely with the branded font, so the swap doesn't shift layout.
+3. **Prioritize which fonts get loaded urgently.** Most pages don't need every weight and style up front. Subset, preload and self-host only what the first view actually needs.
+
+The first piece of legible text is what lets the user start reading. By showing fallback text immediately, you let reading begin at first paint instead of after a network round-trip. The brand fidelity arrives a moment later — at a cost of a small, near-invisible re-render rather than a blank page.
+
+## Guidelines
+
+- **Don't block the first paint on font network requests.** Fallback text should always be visible immediately.
+- **Test with a slow network throttle.** FOIT is invisible on a fast connection. The pattern is built for the user on the slow one.
+- **Audit your font weights.** Each weight is a separate download. Many sites ship four or five weights and use two.
+- **Subset to what you actually use.** Latin-only subsets are dramatically smaller than full Unicode files; per-page subsets are smaller still.
+- **Self-host the critical fonts.** Third-party font CDNs add a DNS lookup, an extra connection and a privacy consideration.
+
+## Related Patterns
+
+- [Fast Start](/patterns/fast_start/) — fonts are one of the most common blockers of first contentful paint.
+- [Immutable Layout](/patterns/immutable_layout/) — well-tuned fallback metrics keep the swap from causing layout shift.
+
+## Technical Implementation
+
+### Use `font-display`
 
 The CSS `font-display` descriptor tells the browser how to behave while the custom font loads:
 
@@ -42,7 +65,7 @@ The CSS `font-display` descriptor tells the browser how to behave while the cust
 
 Avoid the default (`auto`/`block`), which produces FOIT.
 
-### 2. Match fallback metrics to the custom font
+### Match fallback metrics
 
 When the swap happens, lines may rewrap, headings may shift, and Cumulative Layout Shift increases. Modern CSS makes this almost solvable:
 
@@ -60,23 +83,11 @@ When the swap happens, lines may rewrap, headings may shift, and Cumulative Layo
 
 Tools like [Fontaine](https://github.com/unjs/fontaine) and Google's [Font Style Matcher](https://meowni.ca/font-style-matcher/) help find values that make a system fallback nearly indistinguishable in metrics from your branded font.
 
-### 3. Prioritize the right fonts
+### Preload and use modern formats
 
-Custom fonts are not free, even when handled well. Consider:
-
-- **Self-host** rather than relying on third-party font CDNs — this eliminates an extra DNS lookup and connection.
-- **Preload critical fonts** with `<link rel="preload" as="font" type="font/woff2" crossorigin>` so the browser fetches them before discovering them in CSS.
-- **Subset your fonts** to only the characters and weights you actually use.
-- **Use `woff2`** — it's the smallest format and supported everywhere.
-
-## Why This Works
-
-Reading begins with the first piece of legible text. By showing fallback text immediately, you let the user start reading at first paint instead of waiting for a network round-trip. The brand fidelity arrives a moment later — at a cost of a small, near-invisible re-render rather than a blank page.
-
-## Related Patterns
-
-- [Fast Start](/patterns/fast_start/) — fonts are one of the most common blockers of first contentful paint.
-- [Immutable Layout](/patterns/immutable_layout/) — well-tuned fallback metrics keep the swap from causing layout shift.
+- Preload critical fonts with `<link rel="preload" as="font" type="font/woff2" crossorigin>` so the browser fetches them before discovering them in CSS.
+- Use `woff2` — it's the smallest format and supported everywhere.
+- Subset to only the characters and weights you actually use.
 
 ## Resources
 
