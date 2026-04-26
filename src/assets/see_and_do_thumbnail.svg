@@ -24,10 +24,10 @@
   <g transform="translate(40,190)">
     <rect x="0" y="0" width="320" height="68" fill="#fff" stroke="#000" stroke-width="2"/>
     <text x="10" y="18" font-family="Arial, sans-serif" font-size="12" fill="#000" font-weight="bold">Page paint timeline</text>
-    <rect x="10" y="28" width="60" height="18" fill="#fff" stroke="#000" stroke-width="1"/>
-    <rect x="72" y="28" width="80" height="18" fill="#f11300" fill-opacity="0.2" stroke="#000" stroke-width="1"/>
-    <rect x="154" y="28" width="60" height="18" fill="#fff" stroke="#000" stroke-width="1"/>
-    <rect x="216" y="28" width="40" height="18" fill="#f11300" fill-opacity="0.2" stroke="#000" stroke-width="1"/>
+    <rect x="10" y="28" width="60" height="18" fill="#a142f4" stroke="#000" stroke-width="1"/>
+    <rect x="72" y="28" width="80" height="18" fill="#ef5350" stroke="#000" stroke-width="1"/>
+    <rect x="154" y="28" width="60" height="18" fill="#a142f4" stroke="#000" stroke-width="1"/>
+    <rect x="216" y="28" width="40" height="18" fill="#ef5350" stroke="#000" stroke-width="1"/>
     <rect x="258" y="28" width="52" height="18" fill="#fff" stroke="#000" stroke-width="1"/>
     <text x="40" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">paint</text>
     <text x="112" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">long task</text>
