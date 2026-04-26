@@ -20,10 +20,10 @@ The animated circular spinner has become the default progress indicator on the w
 
 A spinner is a circle without a beginning or an end. It rotates indefinitely, resetting every time it completes a turn. As a piece of communication, this has several specific failures:
 
-- **No start, no end, no progress.** The user can't tell whether the operation is 10% complete or 90% complete — only that something is, in some sense, happening.
-- **The motion lies about activity.** A spinner can keep rotating cheerfully even when the underlying request has hung. The animation is decoupled from any real signal.
-- **It tells the user nothing about what is being loaded.** The same spinner appears for "submitting your order," "loading your photos," and "fetching the next 25 results" — three operations with very different stakes.
-- **It admits failure.** A spinner is the developer telling the user, "this part of the site is slow and I don't have a better idea." It is, at best, an apology.
+- **No start, no end, no progress.** The user can't tell whether the operation is 10% complete or 90% complete — only that something is, in some sense, happening
+- **The motion lies about activity.** A spinner can keep rotating cheerfully even when the underlying request has hung. The animation is decoupled from any real signal
+- **It tells the user nothing about what is being loaded.** The same spinner appears for "submitting your order," "loading your photos," and "fetching the next 25 results" — three operations with very different stakes
+- **It admits failure.** A spinner is the developer telling the user, "this part of the site is slow and I don't have a better idea." It is, at best, an apology
 
 Linear (bar-shaped) indeterminate indicators have most of the same problems — they're slightly less visually grating, but they communicate equally little.
 
@@ -45,9 +45,9 @@ A spinner used as the first response to "this is slow" tends to harden the slown
 
 For loading content into a region of the page, use a [skeletal design](/patterns/skeletal_designs/) that mirrors the final layout. Skeletal placeholders convey:
 
-- **What the content will be** (zones, headings, image positions).
-- **Where to look** when the content arrives.
-- **The structure of the page**, so the user can begin orienting themselves.
+- **What the content will be** (zones, headings, image positions)
+- **Where to look** when the content arrives
+- **The structure of the page**, so the user can begin orienting themselves
 
 A spinner conveys none of this. Skeletal designs do all of it for almost the same implementation cost.
 
@@ -73,9 +73,9 @@ Defaulting to a spinner is rarely a deliberate choice — it's a fallback that g
 
 ## Related Patterns
 
-- [Skeletal Designs](/patterns/skeletal_designs/) — structural placeholders that actually communicate.
-- [Acknowledge Actions](/patterns/acknowledge_actions/) — feedback for discrete user actions.
-- [Masking Slowness With Animation](/patterns/masking_slowness_with_animation/) — using transitions to absorb unavoidable delay.
+- [Skeletal Designs](/patterns/skeletal_designs/) — structural placeholders that actually communicate
+- [Acknowledge Actions](/patterns/acknowledge_actions/) — feedback for discrete user actions
+- [Masking Slowness With Animation](/patterns/masking_slowness_with_animation/) — using transitions to absorb unavoidable delay
 
 ## Resources
 
