@@ -21,8 +21,10 @@ Modern web apps frequently have a window — sometimes a few hundred millisecond
 
 The user's experience is "I tapped the button and nothing happened." From their perspective, the site is broken. From the dev tools' perspective, the page is "loaded" — the metric just doesn't match the experience.
 
+The user can see the page and the button (SEE), but a long task on the main thread is still blocking input — the click goes nowhere (DO).
+
 <figure>
-<figcaption>The user can see the page and the button (SEE), but a long task on the main thread is still blocking input — the click goes nowhere (DO).</figcaption>
+<figcaption>Visible should mean usable</figcaption>
 <img src="/assets/see_and_do_thumbnail.svg" width="400" alt="A page paint timeline showing alternating paint and long-task blocks; below it a circle marked SEE next to a button marked DO connected by a blue arrow, with a red exclamation mark indicating that JavaScript is blocking the click"/>
 </figure>
 
