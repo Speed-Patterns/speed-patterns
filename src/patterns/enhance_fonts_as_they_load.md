@@ -22,8 +22,10 @@ Pure FOIT is the worse failure mode: the user can't even start reading. But a ca
 
 ## Solution
 
+Fallback text is legible from the first paint; the branded font swaps in once it loads, without leaving the user waiting on a blank page.
+
 <figure>
-<figcaption>Fallback text is legible from the first paint; the branded font swaps in once it loads, without leaving the user waiting on a blank page.</figcaption>
+<figcaption>System first, custom later</figcaption>
 <img src="/assets/enhance_fonts_thumbnail.svg" width="400" alt="Two text panels side by side: the left in a system sans-serif labeled 'fallback (system)', the right in a serif italic labeled 'custom (loaded)'"/>
 </figure>
 

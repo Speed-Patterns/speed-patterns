@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 400 240" width="400" height="240">
   <rect width="400" height="300" fill="#fff"/>
-  <text x="200" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#000" font-weight="bold">System first, custom later</text>
   <g transform="translate(35,70)">
     <rect x="0" y="0" width="140" height="200" fill="#fd0" stroke="#000" stroke-width="3"/>
     <text x="70" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#000" font-weight="bold">Headline</text>
