@@ -38,6 +38,42 @@
                 })
         </script>
 
+        <script>
+            // Wires the click handler for the copy button. Token coloring is
+            // produced at build time; this script does no syntax highlighting.
+            document.querySelectorAll('pre[class*="language-"]').forEach(function (pre) {
+                var btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "copy-btn";
+                btn.textContent = "Copy";
+                btn.setAttribute("aria-label", "Copy code to clipboard");
+                btn.addEventListener("click", function () {
+                    var code = pre.querySelector("code");
+                    var text = code ? code.innerText : pre.innerText;
+                    var done = function () {
+                        btn.textContent = "Copied!";
+                        btn.classList.add("copied");
+                        setTimeout(function () {
+                            btn.textContent = "Copy";
+                            btn.classList.remove("copied");
+                        }, 1500);
+                    };
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(text).then(done);
+                    } else {
+                        var ta = document.createElement("textarea");
+                        ta.value = text;
+                        document.body.appendChild(ta);
+                        ta.select();
+                        try { document.execCommand("copy"); } catch (e) {}
+                        document.body.removeChild(ta);
+                        done();
+                    }
+                });
+                pre.appendChild(btn);
+            });
+        </script>
+
         <nav class="mobile-hidden">
             <ul>
                 <li class="home-link">

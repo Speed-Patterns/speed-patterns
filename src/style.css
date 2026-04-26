@@ -147,6 +147,147 @@ pre {
     text-wrap: pretty;
 }
 
+/* Code blocks */
+pre[class*="language-"] {
+    position: relative;
+    background-color: #2D3866;
+    color: #fff4de;
+    border: solid 1px #1c2347;
+    border-left: solid 0.5em #4F63B3;
+    border-radius: 6px;
+    padding: 1em 1.25em;
+    margin: 1.5em 0;
+    overflow-x: auto;
+    font-family: "Menlo", "Consolas", "Monaco", "Liberation Mono", monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+pre[class*="language-"] code {
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    padding: 0;
+}
+
+:not(pre) > code[class*="language-"],
+:not(pre) > code {
+    background-color: #f0e6d3;
+    color: #2d2a26;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-family: "Menlo", "Consolas", "Monaco", "Liberation Mono", monospace;
+    font-size: 0.92em;
+}
+
+/* Prism tokens — colorization is pure CSS; markup is generated at build time */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #8a93b8;
+    font-style: italic;
+}
+
+.token.punctuation {
+    color: #a8b0d4;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #ffb0a0;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #b8e8b0;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #ffd680;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #ffd680;
+}
+
+.token.function,
+.token.class-name {
+    color: #c5b3ff;
+}
+
+.token.tag {
+    color: #f59574;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #ffd680;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+/* Copy button */
+.copy-btn {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    padding: 0.35em 0.7em;
+    background-color: rgba(255, 244, 222, 0.12);
+    color: #fff4de;
+    border: solid 1px rgba(255, 244, 222, 0.3);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.8em;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.copy-btn:hover,
+.copy-btn:focus-visible {
+    background-color: rgba(255, 244, 222, 0.22);
+    border-color: rgba(255, 244, 222, 0.5);
+    outline: none;
+}
+
+.copy-btn.copied {
+    background-color: #4F63B3;
+    border-color: #4F63B3;
+    color: #fff4de;
+}
+
 @media screen and (min-width: 75em) {
 
     .mobile-hidden {
