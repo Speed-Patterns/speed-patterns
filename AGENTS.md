@@ -12,15 +12,18 @@ Technical detail is supporting material; if a pattern can only be understood thr
 
 ## Build
 
-- Static site generator: [Eleventy 1.0](https://www.11ty.dev/) (config in [.eleventy.js](.eleventy.js))
+- Static site generator: [Eleventy](https://www.11ty.dev/) (config in [.eleventy.js](.eleventy.js))
 - Markdown: `markdown-it` with `html: true`
 - Excerpts: split on `<!-- excerpt -->` (used by the homepage card list)
 - Syntax highlighting: [`@11ty/eleventy-plugin-syntaxhighlight`](https://github.com/11ty/eleventy-plugin-syntaxhighlight) (Prism, build-time only — no runtime JS performs token coloring)
+- Hosting: [Cloudflare Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) (config in [wrangler.jsonc](wrangler.jsonc)); the worker has no `main` script — Cloudflare serves `_site/` directly
 
 Common commands:
 
-- `npm run start` — local dev server with live reload
+- `npm run start` — Eleventy dev server with live reload (templates + content)
 - `npm run build` — one-shot build into `_site/`
+- `npm run preview` — `wrangler dev` against the built `_site/` (preview Cloudflare-side behavior locally)
+- `npm run deploy` — build and deploy to Cloudflare Workers (`wrangler deploy`)
 - `npm run format` — run [Prettier](https://prettier.io/) across the project
 
 ## Formatting

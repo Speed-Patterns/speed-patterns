@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "speed-patterns",
+  "compatibility_date": "2025-04-26",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page",
+  },
+  "observability": {
+    "enabled": true,
+  },
+}
