@@ -1,6 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 400 250" width="400" height="250">
   <rect width="400" height="300" fill="#fff"/>
   <g transform="translate(40,60)">
+    <circle cx="40" cy="40" r="32" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <circle cx="40" cy="40" r="12" fill="#000"/>
+    <text x="40" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">SEE</text>
+    <text x="40" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page is painted</text>
+  </g>
+  <g stroke="#0085f1" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M85 100 L165 100"/>
+  </g>
+  <polygon points="165,95 178,100 165,105" fill="#0085f1"/>
+  <g transform="translate(180,70)">
+    <rect x="0" y="10" width="120" height="56" fill="#ffa400" stroke="#000" stroke-width="3"/>
+    <text x="60" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#000" font-weight="bold">Click me</text>
+    <text x="60" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">DO</text>
+    <text x="60" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page should respond</text>
+  </g>
+  <g transform="translate(310,70)">
+    <text x="30" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#f11300" font-weight="bold">!</text>
+    <text x="30" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000" font-weight="bold">but...</text>
+    <text x="30" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">JS blocking</text>
+  </g>
+  <g transform="translate(40,190)">
     <rect x="0" y="0" width="320" height="68" fill="#fff" stroke="#000" stroke-width="2"/>
     <text x="10" y="18" font-family="Arial, sans-serif" font-size="12" fill="#000" font-weight="bold">Page paint timeline</text>
     <rect x="10" y="28" width="60" height="18" fill="#fd0" stroke="#000" stroke-width="1"/>
@@ -13,26 +34,5 @@
     <text x="184" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">paint</text>
     <text x="236" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">long task</text>
     <text x="284" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">idle</text>
-  </g>
-  <g transform="translate(40,170)">
-    <circle cx="40" cy="40" r="32" fill="#fd0" stroke="#000" stroke-width="3"/>
-    <circle cx="40" cy="40" r="12" fill="#000"/>
-    <text x="40" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">SEE</text>
-    <text x="40" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page is painted</text>
-  </g>
-  <g stroke="#0085f1" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M85 210 L165 210"/>
-  </g>
-  <polygon points="165,205 178,210 165,215" fill="#0085f1"/>
-  <g transform="translate(180,180)">
-    <rect x="0" y="10" width="120" height="56" fill="#ffa400" stroke="#000" stroke-width="3"/>
-    <text x="60" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#000" font-weight="bold">Click me</text>
-    <text x="60" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">DO</text>
-    <text x="60" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page should respond</text>
-  </g>
-  <g transform="translate(310,180)">
-    <text x="30" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#f11300" font-weight="bold">!</text>
-    <text x="30" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000" font-weight="bold">but...</text>
-    <text x="30" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">JS blocking</text>
   </g>
 </svg>
