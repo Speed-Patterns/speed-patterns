@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "preview": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
-    "prettier": "^3.8.3"
+    "prettier": "^3.8.3",
+    "wrangler": "^4.85.0"
   }
 }

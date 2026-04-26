@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "speedpatterns-com",
+  "compatibility_date": "2025-04-26",
+  "routes": [
+    { "pattern": "speedpatterns.com", "custom_domain": true },
+    { "pattern": "www.speedpatterns.com", "custom_domain": true },
+  ],
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page",
+  },
+  "observability": {
+    "enabled": true,
+  },
+}
