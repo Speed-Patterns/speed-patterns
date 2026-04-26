@@ -52,7 +52,7 @@ The dominant use of an interactive component is often passive consumption of its
 
 - **Match dimensions exactly.** The static placeholder must occupy the same space as the final component to avoid [layout shift](/patterns/immutable_layout/).
 - **Make the static state useful, not decorative.** It should be the real first slide, the real hero image, the real default tab — not a generic placeholder.
-- **Defer the upgrade.** Use `requestIdleCallback`, `IntersectionObserver`, or interaction-based loading so you don't block the main thread fighting for the same resources as the rest of the page.
+- **Don't compete with the critical path.** The upgrade should wait until the rest of the page is settled, so it doesn't fight for resources during the most important part of load.
 - **Test the static-only experience.** Disable JavaScript and confirm the page is still presentable and on-brand.
 
 ## Related Patterns
@@ -60,3 +60,14 @@ The dominant use of an interactive component is often passive consumption of its
 - [Fast Start](/patterns/fast_start/) — getting that first paint up quickly is what makes this pattern pay off.
 - [Immutable Layout](/patterns/immutable_layout/) — the upgrade must not shift the page.
 - [Skeletal Designs](/patterns/skeletal_designs/) — for parts of the UI where no useful static representation exists.
+
+## Technical Implementation
+
+Defer the upgrade until the page is no longer fighting for resources. Useful primitives:
+
+- `requestIdleCallback` — schedule the upgrade for an idle slice of the main thread.
+- `IntersectionObserver` — only upgrade components that are actually visible (or about to be).
+- Interaction-based loading — wait until the user hovers, focuses, or clicks the static placeholder before downloading the heavier interactive code.
+- Dynamic `import()` — code-split the interactive implementation so it isn't part of the critical bundle.
+
+The static placeholder should be authored as plain HTML at the correct final dimensions; the upgrade script then mounts the interactive version into (or in place of) that container without changing its size.
