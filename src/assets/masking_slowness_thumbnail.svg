@@ -1,21 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-  <rect width="400" height="300" fill="#fff4de"/>
-  <g transform="translate(50,90)">
-    <rect x="0" y="0" width="120" height="120" rx="8" fill="#f0e6d3" stroke="#a98c5a" stroke-width="2"/>
-    <text x="60" y="68" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5a4a2e">Loading...</text>
+  <rect width="400" height="300" fill="#fff"/>
+  <rect x="0" y="0" width="200" height="300" fill="#f11300" fill-opacity="0.1"/>
+  <rect x="200" y="0" width="200" height="300" fill="#00f13e" fill-opacity="0.2"/>
+  <text x="200" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#000" font-weight="bold">Mask the wait with motion</text>
+  <g transform="translate(40,90)">
+    <rect x="0" y="0" width="120" height="120" fill="#ffa400" stroke="#000" stroke-width="3"/>
+    <text x="60" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#000" font-weight="bold">Loading...</text>
+    <text x="60" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">abrupt wait</text>
   </g>
-  <g stroke="#a98c5a" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M190 150 q40 -30 80 0" />
-    <path d="M190 170 q40 -30 80 0" opacity="0.6"/>
-    <path d="M190 190 q40 -30 80 0" opacity="0.3"/>
-    <polygon points="270,148 282,150 272,158" fill="#a98c5a"/>
+  <g stroke="#0085f1" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M175 150 q25 -25 50 0"/>
+    <path d="M175 170 q25 -25 50 0" opacity="0.6"/>
+    <path d="M175 190 q25 -25 50 0" opacity="0.3"/>
   </g>
-  <g transform="translate(290,90)">
-    <rect x="0" y="0" width="120" height="120" rx="8" fill="#fff8eb" stroke="#a98c5a" stroke-width="2"/>
-    <rect x="10" y="14" width="100" height="14" fill="#f0e6d3"/>
-    <rect x="10" y="36" width="80" height="8" fill="#f0e6d3"/>
-    <rect x="10" y="50" width="90" height="8" fill="#f0e6d3"/>
-    <rect x="10" y="76" width="100" height="32" fill="#a98c5a"/>
+  <polygon points="225,148 240,150 228,158" fill="#0085f1"/>
+  <g transform="translate(240,90)">
+    <rect x="0" y="0" width="120" height="120" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <rect x="12" y="16" width="96" height="14" fill="#000"/>
+    <rect x="12" y="38" width="76" height="8" fill="#000"/>
+    <rect x="12" y="52" width="86" height="8" fill="#000"/>
+    <rect x="12" y="78" width="96" height="28" fill="#0085f1"/>
+    <text x="60" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">smooth arrival</text>
   </g>
-  <text x="200" y="40" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5a4a2e" font-weight="bold">Mask the wait with motion</text>
 </svg>
