@@ -84,7 +84,15 @@ Technical detail belongs at the end of the article. Lead with UX/design content;
 ### Assets
 
 - Images live in [src/assets/](src/assets/) and are passthrough-copied by Eleventy
-- Prefer SVG for diagrammatic thumbnails — the existing palette is warm beige (`#fff4de`, `#f0e6d3`) with brown / navy accents (`#a98c5a`, `#5a4a2e`, `#2D3866`, `#4F63B3`)
+- Prefer SVG for diagrammatic thumbnails and inline diagrams. Follow the visual language of the canonical example, [src/assets/skeletal_design_perception_time_diagram.svg](src/assets/skeletal_design_perception_time_diagram.svg):
+  - White background (`#fff`)
+  - Primary fills: yellow `#fd0` and orange `#ffa400` for content / state boxes
+  - Zone tints used at low opacity (~0.1–0.2): green `#00f13e` for the "with pattern" / good zone and red `#f11300` for the "without pattern" / bad zone
+  - Accent line color: blue `#0085f1` (e.g. for time / progression arrows)
+  - Borders, arrows and labels: black `#000`
+  - Typography: sans-serif (Arial / system stack)
+  - Place a low-opacity `SPEEDPATTERNS.COM` wordmark in a corner for diagrams that may be reused outside the site
+- The site chrome (header, nav, sidebar) uses a separate warm-beige palette (`#fff4de`, `#f0e6d3`, `#a98c5a`, `#2D3866`, `#4F63B3`) — that palette is for the page itself, not for in-article diagrams
 - For new patterns, the site-wide [src/assets/speed_patterns_og_image.jpg](src/assets/speed_patterns_og_image.jpg) is an acceptable temporary `og_image` until a per-pattern one is designed
 
 ## Code blocks
