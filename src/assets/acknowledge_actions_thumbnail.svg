@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 400 140" width="400" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 400 110" width="400" height="110">
   <rect width="400" height="300" fill="#fff"/>
   <g transform="translate(40,100)">
-    <rect x="0" y="0" width="140" height="56" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <text x="70" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">idle button</text>
+    <rect x="0" y="0" width="140" height="56" rx="6" fill="#fafafa" stroke="#888" stroke-width="1"/>
     <text x="70" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#000" font-weight="bold">Submit</text>
-    <text x="70" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">idle button</text>
   </g>
   <g stroke="#000" stroke-width="3" fill="none" stroke-linecap="round">
     <path d="M190 128 L220 128"/>
   </g>
   <polygon points="220,123 235,128 220,133" fill="#000"/>
   <g transform="translate(225,100)">
-    <rect x="0" y="0" width="140" height="56" fill="#ffa400" stroke="#000" stroke-width="3" stroke-dasharray="6 3"/>
+    <text x="70" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">acknowledged + disabled</text>
+    <rect x="0" y="0" width="140" height="56" rx="6" fill="#efefef" stroke="#c0c0c0" stroke-width="1"/>
     <circle cx="32" cy="28" r="8" fill="none" stroke="#0085f1" stroke-width="3" stroke-dasharray="14 6">
       <animateTransform attributeName="transform" type="rotate" from="0 32 28" to="360 32 28" dur="1s" repeatCount="indefinite"/>
     </circle>
-    <text x="86" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#000" font-weight="bold">Submitting…</text>
-    <text x="70" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">acknowledged + disabled</text>
+    <text x="86" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#888" font-weight="bold">Submitting…</text>
   </g>
 </svg>
