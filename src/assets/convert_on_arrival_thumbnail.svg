@@ -1,29 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-  <rect width="400" height="300" fill="#fff4de"/>
-  <text x="200" y="36" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5a4a2e" font-weight="bold">Static first, interactive later</text>
-  <g transform="translate(40,80)">
-    <rect x="0" y="0" width="140" height="180" rx="6" fill="#fff8eb" stroke="#a98c5a" stroke-width="2"/>
-    <rect x="10" y="20" width="120" height="100" fill="#a98c5a"/>
-    <text x="70" y="76" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fff8eb">Slide 1</text>
-    <rect x="10" y="140" width="120" height="10" fill="#f0e6d3"/>
-    <rect x="10" y="156" width="80" height="8" fill="#f0e6d3"/>
+  <rect width="400" height="300" fill="#fff"/>
+  <text x="200" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#000" font-weight="bold">Static first, interactive later</text>
+  <g transform="translate(35,70)">
+    <rect x="0" y="0" width="140" height="200" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <rect x="12" y="20" width="116" height="100" fill="#0085f1"/>
+    <text x="70" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold">Slide 1</text>
+    <rect x="12" y="140" width="116" height="10" fill="#000"/>
+    <rect x="12" y="156" width="76" height="8" fill="#000"/>
+    <text x="70" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">static (HTML only)</text>
   </g>
-  <g stroke="#a98c5a" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M195 170 L235 170" />
-    <polygon points="235,165 247,170 235,175" fill="#a98c5a"/>
+  <g stroke="#000" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M185 165 L215 165"/>
   </g>
-  <g transform="translate(255,80)">
-    <rect x="0" y="0" width="140" height="180" rx="6" fill="#fff8eb" stroke="#a98c5a" stroke-width="2"/>
-    <rect x="10" y="20" width="120" height="100" fill="#a98c5a"/>
-    <text x="70" y="76" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fff8eb">1 / 5</text>
-    <circle cx="40" cy="135" r="3" fill="#a98c5a"/>
-    <circle cx="55" cy="135" r="3" fill="#f0e6d3"/>
-    <circle cx="70" cy="135" r="3" fill="#f0e6d3"/>
-    <circle cx="85" cy="135" r="3" fill="#f0e6d3"/>
-    <circle cx="100" cy="135" r="3" fill="#f0e6d3"/>
-    <polygon points="20,70 8,60 8,80" fill="#a98c5a"/>
-    <polygon points="120,70 132,60 132,80" fill="#a98c5a"/>
-    <rect x="10" y="150" width="120" height="10" fill="#f0e6d3"/>
-    <rect x="10" y="166" width="80" height="8" fill="#f0e6d3"/>
+  <polygon points="215,160 230,165 215,170" fill="#000"/>
+  <g transform="translate(225,70)">
+    <rect x="0" y="0" width="140" height="200" fill="#ffa400" stroke="#000" stroke-width="3"/>
+    <rect x="12" y="20" width="116" height="100" fill="#0085f1"/>
+    <text x="70" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#fff" font-weight="bold">1 / 5</text>
+    <polygon points="22,70 10,60 10,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="118,70 130,60 130,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <circle cx="42" cy="135" r="4" fill="#000"/>
+    <circle cx="58" cy="135" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="74" cy="135" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="90" cy="135" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="106" cy="135" r="4" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <rect x="12" y="150" width="116" height="10" fill="#000"/>
+    <rect x="12" y="166" width="76" height="8" fill="#000"/>
+    <text x="70" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">interactive (after JS)</text>
   </g>
 </svg>
