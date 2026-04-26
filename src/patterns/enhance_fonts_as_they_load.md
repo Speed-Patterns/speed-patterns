@@ -22,6 +22,11 @@ Pure FOIT is the worse failure mode: the user can't even start reading. But a ca
 
 ## Solution
 
+<figure>
+<figcaption>Fallback text is legible from the first paint; the branded font swaps in once it loads, without leaving the user waiting on a blank page.</figcaption>
+<img src="/assets/enhance_fonts_thumbnail.svg" width="400" alt="Two text panels side by side: the left in a system sans-serif labeled 'fallback (system)', the right in a serif italic labeled 'custom (loaded)'"/>
+</figure>
+
 Treat custom fonts as a progressive enhancement, not a render blocker. Show legible fallback text from the first paint, then upgrade to the branded font when it arrives. Choose the fallback so the swap is as imperceptible as possible.
 
 The strategy has three parts:
