@@ -11,9 +11,11 @@ The animated circular spinner has become the default progress indicator on the w
 
 <!-- excerpt -->
 
+The classic spinner: an animation that says nothing.
+
 <figure>
-<figcaption>The classic spinner: an animation that says nothing.</figcaption>
 <img src="/assets/no_spinners_animated.svg" width="120" alt="Animated circular spinner with a slash through it"/>
+<figcaption>Don't use Spinners!</figcaption>
 </figure>
 
 ## What's Wrong With Spinners?
