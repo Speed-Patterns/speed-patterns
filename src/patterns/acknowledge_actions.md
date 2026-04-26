@@ -35,22 +35,6 @@ Give the user visible feedback the instant their action begins, separate from th
 - **Pre-clear the destination area.** For navigation that will replace a content region, clear the old content immediately so the user sees the page begin to respond, even before the new content arrives.
 - **Move attention to the next state.** Modals can begin their open animation immediately, even if their content streams in.
 
-### Example: a form submit button
-
-```html
-<button type="submit" id="submit-btn">Submit</button>
-```
-
-```js
-form.addEventListener("submit", () => {
-  const btn = document.getElementById("submit-btn");
-  btn.disabled = true;
-  btn.textContent = "Submitting…";
-});
-```
-
-This costs almost nothing to implement, and it makes the slow path feel intentional rather than broken.
-
 ## Guidelines
 
 - **Acknowledge in the first frame.** The acknowledgment must happen on the same paint as the input event — not after a network round-trip. If you wait for the server, you've already lost the moment.
@@ -68,3 +52,21 @@ The technical work behind the action hasn't gotten any faster, but the experienc
 - [Masking Slowness With Animation](/patterns/masking_slowness_with_animation/) — pairing acknowledgment with a transition to occupy the wait.
 - [Don't Use Spinners](/patterns/dont_use_spinners/) — preferred alternatives for longer waits.
 - [Skeletal Designs](/patterns/skeletal_designs/) — for acknowledging navigation that loads a whole new view.
+
+## Technical Implementation
+
+A minimal form submission acknowledgment is essentially two lines of code: disable the button and change its label as soon as the submit event fires.
+
+```html
+<button type="submit" id="submit-btn">Submit</button>
+```
+
+```js
+form.addEventListener("submit", () => {
+  const btn = document.getElementById("submit-btn");
+  btn.disabled = true;
+  btn.textContent = "Submitting…";
+});
+```
+
+This costs almost nothing to implement, and it makes the slow path feel intentional rather than broken. The same pattern applies to any control that initiates work — change the visual state in the same frame as the input event, not after the response returns.
