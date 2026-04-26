@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "speed-patterns",
+  "name": "speedpatterns-com",
   "compatibility_date": "2025-04-26",
   "routes": [
     { "pattern": "speedpatterns.com", "custom_domain": true },
