@@ -24,7 +24,7 @@ The user's experience is "I tapped the button and nothing happened." From their 
 The user can see the page and the button (SEE), but a long task on the main thread is still blocking input — the click goes nowhere (DO).
 
 <figure>
-<img src="/assets/see_and_do_thumbnail.svg" width="400" alt="A page paint timeline showing alternating paint and long-task blocks; below it a circle marked SEE next to a button marked DO connected by a blue arrow, with a red exclamation mark indicating that JavaScript is blocking the click"/>
+<img src="/assets/see_and_do_thumbnail.svg" width="460" alt="A page paint timeline showing alternating paint and long-task blocks; below it a circle marked SEE next to a button marked DO connected by a blue arrow, with a red exclamation mark indicating that JavaScript is blocking the click"/>
 <figcaption>Visible should mean usable</figcaption>
 </figure>
 
