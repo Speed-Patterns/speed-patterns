@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
-  <rect width="400" height="300" fill="#fff4de"/>
-  <text x="200" y="38" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5a4a2e" font-weight="bold">Acknowledge every click</text>
-  <g transform="translate(60,90)">
-    <rect x="0" y="0" width="120" height="48" rx="6" fill="#a98c5a"/>
-    <text x="60" y="30" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#fff8eb" font-weight="bold">Submit</text>
-    <text x="60" y="76" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5a4a2e">idle button</text>
+  <rect width="400" height="300" fill="#fff"/>
+  <text x="200" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#000" font-weight="bold">Acknowledge every click</text>
+  <g transform="translate(40,100)">
+    <rect x="0" y="0" width="140" height="56" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <text x="70" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#000" font-weight="bold">Submit</text>
+    <text x="70" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">idle button</text>
   </g>
-  <g stroke="#a98c5a" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M195 114 L235 114" />
-    <polygon points="235,109 247,114 235,119" fill="#a98c5a"/>
+  <g stroke="#000" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M190 128 L220 128"/>
   </g>
-  <g transform="translate(255,90)">
-    <rect x="0" y="0" width="120" height="48" rx="6" fill="#c9b48a" stroke="#a98c5a" stroke-width="2" stroke-dasharray="4 3"/>
-    <circle cx="34" cy="24" r="6" fill="none" stroke="#5a4a2e" stroke-width="2" stroke-dasharray="9 5">
-      <animateTransform attributeName="transform" type="rotate" from="0 34 24" to="360 34 24" dur="1s" repeatCount="indefinite"/>
+  <polygon points="220,123 235,128 220,133" fill="#000"/>
+  <g transform="translate(225,100)">
+    <rect x="0" y="0" width="140" height="56" fill="#ffa400" stroke="#000" stroke-width="3" stroke-dasharray="6 3"/>
+    <circle cx="32" cy="28" r="8" fill="none" stroke="#0085f1" stroke-width="3" stroke-dasharray="14 6">
+      <animateTransform attributeName="transform" type="rotate" from="0 32 28" to="360 32 28" dur="1s" repeatCount="indefinite"/>
     </circle>
-    <text x="80" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5a4a2e" font-weight="bold">Submitting…</text>
-    <text x="60" y="76" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5a4a2e">acknowledged + disabled</text>
+    <text x="86" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#000" font-weight="bold">Submitting…</text>
+    <text x="70" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">acknowledged + disabled</text>
   </g>
 </svg>
