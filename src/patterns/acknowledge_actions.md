@@ -25,8 +25,10 @@ The threshold matters: research on perceived responsiveness consistently puts ro
 
 ## Solution
 
+The same control on click: idle state on the left, immediately disabled with a "Submitting…" label and inline indicator on the right.
+
 <figure>
-<figcaption>The same control on click: idle state on the left, immediately disabled with a "Submitting…" label and inline indicator on the right.</figcaption>
+<figcaption>Acknowledge every click</figcaption>
 <img src="/assets/acknowledge_actions_thumbnail.svg" width="400" alt="Two buttons: a yellow 'Submit' button labeled 'idle button', and a dashed-border orange 'Submitting…' button with a small rotating indicator labeled 'acknowledged + disabled'"/>
 </figure>
 
