@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 400 250" width="400" height="250">
   <rect width="400" height="300" fill="#fff" />
-  <g transform="translate(40,60)">
+  <g transform="translate(25,60)">
     <circle cx="40" cy="40" r="32" fill="#fff" stroke="#000" stroke-width="3" />
     <circle cx="40" cy="40" r="12" fill="#000" />
     <text x="40" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000"
@@ -9,10 +9,10 @@
       painted</text>
   </g>
   <g stroke="#0085f1" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M85 100 L165 100" />
+    <path d="M70 100 L150 100" />
   </g>
-  <polygon points="165,95 178,100 165,105" fill="#0085f1" />
-  <g transform="translate(180,72)">
+  <polygon points="150,95 163,100 150,105" fill="#0085f1" />
+  <g transform="translate(165,72)">
     <rect x="0" y="0" width="120" height="56" rx="6" fill="#fafafa" stroke="#888" stroke-width="1" />
     <text x="60" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#000"
       font-weight="bold">Click me</text>
@@ -21,7 +21,7 @@
     <text x="60" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page should
       respond</text>
   </g>
-  <g transform="translate(310,60)">
+  <g transform="translate(295,60)">
     <text x="30" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#f11300"
       font-weight="bold">!</text>
     <text x="30" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000"
