@@ -27,8 +27,8 @@ Until all of that arrives, the user either sees nothing, sees a spinner, or sees
 The static placeholder ships in the first HTML response; the carousel "converts" into its full interactive form once the supporting code arrives, without changing size.
 
 <figure>
-<figcaption>Static first, interactive later</figcaption>
 <img src="/assets/convert_on_arrival_thumbnail.svg" width="400" alt="Two carousel panels side by side: the left shows a single static slide labeled 'Slide 1', the right shows the same panel as a fully interactive carousel with arrows, position dots and a counter '1 / 5'"/>
+<figcaption>Static first, interactive later</figcaption>
 </figure>
 
 Render the simplest possible static representation of the component immediately, using only HTML and CSS. Then progressively enhance it into the full interactive version as the supporting code and data arrive.
