@@ -88,7 +88,7 @@ When the swap happens, lines may rewrap, headings may shift, and Cumulative Layo
 }
 ```
 
-Tools like [Fontaine](https://github.com/unjs/fontaine) and Google's [Font Style Matcher](https://meowni.ca/font-style-matcher/) help find values that make a system fallback nearly indistinguishable in metrics from your branded font.
+Tools like [Fontaine](https://github.com/unjs/fontaine) and Monica Dinculescu's [Font Style Matcher](https://meowni.ca/font-style-matcher/) help find values that make a system fallback nearly indistinguishable in metrics from your branded font.
 
 ### Preload and use modern formats
 
@@ -99,5 +99,5 @@ Tools like [Fontaine](https://github.com/unjs/fontaine) and Google's [Font Style
 ## Resources
 
 - [`font-display` on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display)
-- [Font Style Matcher](https://meowni.ca/font-style-matcher/) by Monica Dinculescu
+- [Font Style Matcher](https://meowni.ca/font-style-matcher/) by [Monica Dinculescu](https://meowni.ca/)
 - [Improved font fallbacks (web.dev)](https://web.dev/articles/css-size-adjust)
