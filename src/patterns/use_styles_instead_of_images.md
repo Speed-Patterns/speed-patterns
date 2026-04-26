@@ -45,30 +45,7 @@ A common offender is a hero banner that combines a photographic image with overl
 - **PNG** preserves the text edges crisply but bloats the photographic part.
 - **JPEG** compresses the photo well but introduces visible artifacts around the text.
 
-The right answer is to split the layers:
-
-```html
-<section class="hero">
-  <img src="/assets/hero-photo.jpg" alt="" class="hero__photo" />
-  <div class="hero__copy">
-    <h1>Crisp, real text</h1>
-    <p>Selectable, translatable, accessible.</p>
-  </div>
-</section>
-```
-
-```css
-.hero { position: relative; }
-.hero__photo { width: 100%; height: 100%; object-fit: cover; }
-.hero__copy {
-  position: absolute; inset: 0;
-  display: grid; place-content: center;
-  color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
-```
-
-The photo can be aggressively compressed (it's only being judged as a photo). The text stays crisp, accessible, responsive, and editable without shipping a new image.
+The right answer is to split the layers: keep the photo as a compressed image and render the text as real HTML positioned over it. The photo can be aggressively compressed (it's only being judged as a photo). The text stays crisp, accessible, responsive, and editable without shipping a new image.
 
 ## Why This Works
 
@@ -92,3 +69,36 @@ CSS rules are part of the stylesheet — already cached, already parsed, already
 
 - [Fast Start](/patterns/fast_start/) — fewer bytes and fewer requests directly improve First Contentful Paint.
 - [Immutable Layout](/patterns/immutable_layout/) — CSS-rendered visuals know their dimensions immediately, so they don't shift.
+
+## Technical Implementation
+
+### Splitting the mixed hero
+
+The mixed-hero anti-pattern is fixed by separating the photographic layer from the typographic one:
+
+```html
+<section class="hero">
+  <img src="/assets/hero-photo.jpg" alt="" class="hero__photo" />
+  <div class="hero__copy">
+    <h1>Crisp, real text</h1>
+    <p>Selectable, translatable, accessible.</p>
+  </div>
+</section>
+```
+
+```css
+.hero { position: relative; }
+.hero__photo { width: 100%; height: 100%; object-fit: cover; }
+.hero__copy {
+  position: absolute; inset: 0;
+  display: grid; place-content: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+```
+
+Each layer is now optimized for its own job: the JPEG can compress freely, and the text remains crisp, indexable and translatable.
+
+### CSS instead of decorative images
+
+Most decorative effects that once required images are direct CSS now: `box-shadow`, `border-radius`, `linear-gradient()`, `radial-gradient()`, `conic-gradient()`, `backdrop-filter`, `mask-image` and the `filter` family cover almost all of what design tools export. When in doubt, prototype the effect in CSS first; only fall back to a raster export if the browser truly can't reproduce it.
