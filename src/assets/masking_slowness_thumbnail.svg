@@ -12,7 +12,6 @@
     <path d="M175 170 q25 -25 50 0" opacity="0.6"/>
     <path d="M175 190 q25 -25 50 0" opacity="0.3"/>
   </g>
-  <polygon points="225,148 240,150 228,158" fill="#0085f1"/>
   <g transform="translate(240,90)">
     <rect x="0" y="0" width="120" height="120" fill="#fd0" stroke="#000" stroke-width="3"/>
     <rect x="12" y="16" width="96" height="14" fill="#000"/>
