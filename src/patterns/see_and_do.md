@@ -15,9 +15,9 @@ When a user can see a button, they assume they can press it. When they can read 
 
 Modern web apps frequently have a window — sometimes a few hundred milliseconds, sometimes several seconds — between when content becomes visible and when the page is actually ready to handle interaction. During that window:
 
-- Clicks may be silently dropped because no event listener is attached yet.
-- Inputs may register keystrokes but not validate, autocomplete, or submit.
-- Long tasks on the main thread (script evaluation, framework hydration, expensive layout) block the event loop, so even queued events sit waiting.
+- Clicks may be silently dropped because no event listener is attached yet
+- Inputs may register keystrokes but not validate, autocomplete, or submit
+- Long tasks on the main thread (script evaluation, framework hydration, expensive layout) block the event loop, so even queued events sit waiting
 
 The user's experience is "I tapped the button and nothing happened." From their perspective, the site is broken. From the dev tools' perspective, the page is "loaded" — the metric just doesn't match the experience.
 
@@ -29,9 +29,9 @@ Treat _interactivity_ as part of the loading experience, not a separate concern.
 
 If a control isn't ready to do its job, don't show it as if it were. Options:
 
-- **Render the control disabled** until its handler is wired up. The user can see it but visibly cannot use it yet — that mismatch is honest.
-- **Defer the entire feature** behind a placeholder, and swap it in only when its code is loaded. This is the [Convert on Arrival](/patterns/convert_on_arrival/) pattern.
-- **Keep the form action working without JavaScript** so a submit during the gap still works — the page progressively enhances rather than depending on scripts for basic function.
+- **Render the control disabled** until its handler is wired up. The user can see it but visibly cannot use it yet — that mismatch is honest
+- **Defer the entire feature** behind a placeholder, and swap it in only when its code is loaded. This is the [Convert on Arrival](/patterns/convert_on_arrival/) pattern
+- **Keep the form action working without JavaScript** so a submit during the gap still works — the page progressively enhances rather than depending on scripts for basic function
 
 ### Make critical input paths cheap
 
@@ -49,18 +49,18 @@ The "see and do" gap is also one of the easiest performance problems to overlook
 
 ## Related Patterns
 
-- [Acknowledge Actions](/patterns/acknowledge_actions/) — what to do once interaction is ready.
-- [Convert on Arrival](/patterns/convert_on_arrival/) — staging interactivity progressively.
-- [Skeletal Designs](/patterns/skeletal_designs/) — placeholders for content that isn't ready yet.
+- [Acknowledge Actions](/patterns/acknowledge_actions/) — what to do once interaction is ready
+- [Convert on Arrival](/patterns/convert_on_arrival/) — staging interactivity progressively
+- [Skeletal Designs](/patterns/skeletal_designs/) — placeholders for content that isn't ready yet
 
 ## Technical Implementation
 
 ### Metrics to watch
 
-- **Interaction to Next Paint (INP)** — measures the latency of real user interactions. A page with bad INP looks fast and feels broken.
-- **Total Blocking Time (TBT)** — sums up the time the main thread is blocked by long tasks during load.
+- **Interaction to Next Paint (INP)** — measures the latency of real user interactions. A page with bad INP looks fast and feels broken
+- **Total Blocking Time (TBT)** — sums up the time the main thread is blocked by long tasks during load
 - **Long Tasks API** — surfaces individual tasks longer than 50ms that prevent the page from responding to input. ([Long Tasks spec](https://www.w3.org/TR/longtasks/))
-- **Time to Interactive (TTI)** — when the page has been visually ready and the main thread has stayed quiet long enough to handle input.
+- **Time to Interactive (TTI)** — when the page has been visually ready and the main thread has stayed quiet long enough to handle input
 
 Watch INP and TBT in real-user monitoring, not just lab tests — the lab can hide problems that real devices and real interaction patterns expose.
 
@@ -68,10 +68,10 @@ Watch INP and TBT in real-user monitoring, not just lab tests — the lab can hi
 
 The main thread is a single lane. While it's busy compiling a 400KB framework bundle or hydrating a thousand components, every user input is queued behind that work.
 
-- **Split work into smaller chunks** using `requestIdleCallback`, `scheduler.postTask`, or simple `setTimeout(0)` yields.
-- **Defer non-critical scripts** with `async`, `defer`, or dynamic imports gated by interaction.
-- **Avoid re-hydrating already-rendered server HTML** when possible — emerging patterns like resumability, islands, and selective hydration target exactly this cost.
-- **Audit third-party scripts.** Tag managers, analytics, A/B testing libraries and chat widgets are common sources of long tasks that block the page during the most visible part of load.
+- **Split work into smaller chunks** using `requestIdleCallback`, `scheduler.postTask`, or simple `setTimeout(0)` yields
+- **Defer non-critical scripts** with `async`, `defer`, or dynamic imports gated by interaction
+- **Avoid re-hydrating already-rendered server HTML** when possible — emerging patterns like resumability, islands, and selective hydration target exactly this cost
+- **Audit third-party scripts.** Tag managers, analytics, A/B testing libraries and chat widgets are common sources of long tasks that block the page during the most visible part of load
 
 ## Resources
 
