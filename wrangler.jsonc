@@ -6,6 +6,7 @@
     { "pattern": "speedpatterns.com", "custom_domain": true },
     { "pattern": "www.speedpatterns.com", "custom_domain": true },
   ],
+  "preview_urls": true,
   "assets": {
     "directory": "./_site",
     "not_found_handling": "404-page",
@@ -13,5 +14,4 @@
   "observability": {
     "enabled": true,
   },
-  "preview_urls": true,
 }
