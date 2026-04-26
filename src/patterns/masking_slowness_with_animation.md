@@ -24,8 +24,8 @@ Even when the underlying technical delay is the same, an experience that snaps f
 Without animation the wait reads as an abrupt pause; a short, purposeful transition turns the same delay into smooth arrival.
 
 <figure>
-<figcaption>Mask the wait with motion</figcaption>
 <img src="/assets/masking_slowness_thumbnail.svg" width="400" alt="An orange 'Loading…' box on the left and a yellow content panel on the right, connected by a curved blue motion line"/>
+<figcaption>Mask the wait with motion</figcaption>
 </figure>
 
 Use motion to bridge the moment between user input and the new state. A short, purposeful animation does several things at once:
