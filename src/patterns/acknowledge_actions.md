@@ -19,7 +19,7 @@ Without acknowledgment, the user is left to guess:
 - Should I click again? (Often resulting in duplicate submissions.)
 - Is the page broken? (Often resulting in the user navigating away.)
 
-This isn't a hypothetical — duplicate form submissions are a classic symptom of missing acknowledgment, and most engineers have seen the resulting "duplicate order" tickets.
+This isn't a hypothetical — duplicate form submissions are a classic symptom of missing acknowledgment, and most engineers have seen the resulting "duplicate order" tickets. The same frustration shows up as **rage clicks** — repeated, accelerating taps on the same element that real-user monitoring tools flag as a user-frustration signal. A button that gives no feedback for a couple of seconds is the most reliable way to manufacture them.
 
 The threshold matters: research on perceived responsiveness consistently puts roughly **100ms** as the upper bound for an action to feel instantaneous. Any longer, and the user notices the delay. Beyond about a second, the user starts to disengage entirely.
 
