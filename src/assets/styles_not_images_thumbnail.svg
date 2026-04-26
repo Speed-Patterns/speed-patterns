@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 400 240" width="400" height="240">
   <rect width="400" height="300" fill="#fff"/>
   <g transform="translate(35,70)">
-    <rect x="0" y="0" width="140" height="200" fill="#ffa400" stroke="#000" stroke-width="3"/>
+    <rect x="0" y="0" width="140" height="200" fill="#fff" stroke="#000" stroke-width="3"/>
     <g transform="translate(20,28)">
       <rect x="0" y="0" width="100" height="56" fill="#fff" stroke="#000" stroke-width="2"/>
       <g fill="#000">
@@ -33,7 +33,7 @@
   </g>
   <polygon points="200,160 215,165 200,170" fill="#000"/>
   <g transform="translate(225,70)">
-    <rect x="0" y="0" width="140" height="200" fill="#fd0" stroke="#000" stroke-width="3"/>
+    <rect x="0" y="0" width="140" height="200" fill="#fff" stroke="#000" stroke-width="3"/>
     <rect x="20" y="28" width="100" height="56" rx="14" fill="#0085f1" stroke="#000" stroke-width="2"/>
     <text x="70" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000" font-weight="bold">CSS: ~120 B</text>
     <text x="70" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">crisp at any DPI</text>
