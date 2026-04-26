@@ -21,8 +21,10 @@ A typical handoff path looks like this: the designer builds a mockup in Figma or
 
 Every image is a network round-trip, a decode step on the user's CPU, and a layout consideration. Avoiding the round-trip entirely is almost always cheaper.
 
+The same visual element shipped two ways: as a 142KB raster image, or as ~120 bytes of CSS. The CSS version is also crisp at any DPI and animatable.
+
 <figure>
-<figcaption>The same visual element shipped two ways: as a 142KB raster image, or as ~120 bytes of CSS. The CSS version is also crisp at any DPI and animatable.</figcaption>
+<figcaption>Pixels vs. CSS</figcaption>
 <img src="/assets/styles_not_images_thumbnail.svg" width="400" alt="Side-by-side comparison: a pixelated raster image labeled '142 KB, blurry on retina, slow to render' next to a smooth rounded rectangle labeled 'CSS: ~120 B, crisp at any DPI, animatable'"/>
 </figure>
 
