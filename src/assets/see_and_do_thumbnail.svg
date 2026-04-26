@@ -10,32 +10,32 @@
     <path d="M85 100 L165 100"/>
   </g>
   <polygon points="165,95 178,100 165,105" fill="#0085f1"/>
-  <g transform="translate(180,70)">
-    <rect x="0" y="10" width="120" height="56" fill="#fff" stroke="#000" stroke-width="3"/>
-    <text x="60" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#000" font-weight="bold">Click me</text>
-    <text x="60" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">DO</text>
-    <text x="60" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page should respond</text>
+  <g transform="translate(180,72)">
+    <rect x="0" y="0" width="120" height="56" rx="6" fill="#fafafa" stroke="#888" stroke-width="1"/>
+    <text x="60" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#000" font-weight="bold">Click me</text>
+    <text x="60" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#000" font-weight="bold">DO</text>
+    <text x="60" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">page should respond</text>
   </g>
-  <g transform="translate(310,70)">
+  <g transform="translate(310,60)">
     <text x="30" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#f11300" font-weight="bold">!</text>
-    <text x="30" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000" font-weight="bold">but...</text>
-    <text x="30" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">JS is late/blocking</text>
+    <text x="30" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000" font-weight="bold">but...</text>
+    <text x="30" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000">JS is late/blocking</text>
   </g>
-  <g transform="translate(40,190)">
-    <rect x="0" y="0" width="320" height="100" fill="#fff" stroke="#000" stroke-width="2"/>
+  <g transform="translate(0,190)">
+    <rect x="0" y="0" width="400" height="100" fill="#fff" stroke="#000" stroke-width="2"/>
     <text x="10" y="14" font-family="Arial, sans-serif" font-size="12" fill="#000" font-weight="bold">Page paint timeline</text>
-    <text x="6" y="35" font-family="Arial, sans-serif" font-size="10" fill="#000">Paint</text>
-    <rect x="40" y="24" width="20" height="14" fill="#0d8043" stroke="#000" stroke-width="1"/>
-    <text x="50" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#fff" font-weight="bold">CSS</text>
-    <rect x="60" y="24" width="24" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
-    <text x="14" y="57" font-family="Arial, sans-serif" font-size="10" fill="#000">JS</text>
-    <rect x="40" y="46" width="120" height="14" fill="#ffd54f" stroke="#000" stroke-width="1"/>
-    <text x="125" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">JS loading</text>
-    <rect x="160" y="46" width="80" height="14" fill="#ef5350" stroke="#000" stroke-width="1"/>
-    <text x="200" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">long task</text>
-    <line x1="84" y1="20" x2="84" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
-    <text x="84" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">visible</text>
-    <line x1="240" y1="20" x2="240" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
-    <text x="240" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">interactive</text>
+    <text x="8" y="35" font-family="Arial, sans-serif" font-size="10" fill="#000">Paint</text>
+    <rect x="44" y="24" width="24" height="14" fill="#0d8043" stroke="#000" stroke-width="1"/>
+    <text x="56" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#fff" font-weight="bold">CSS</text>
+    <rect x="68" y="24" width="40" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
+    <text x="16" y="57" font-family="Arial, sans-serif" font-size="10" fill="#000">JS</text>
+    <rect x="44" y="46" width="200" height="14" fill="#ffd54f" stroke="#000" stroke-width="1"/>
+    <text x="144" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">JS loading</text>
+    <rect x="244" y="46" width="120" height="14" fill="#ef5350" stroke="#000" stroke-width="1"/>
+    <text x="304" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">long task</text>
+    <line x1="108" y1="20" x2="108" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="108" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">visible</text>
+    <line x1="364" y1="20" x2="364" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="364" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">interactive</text>
   </g>
 </svg>
