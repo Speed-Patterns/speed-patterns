@@ -116,10 +116,10 @@ Always tag fenced code blocks with a language (`html`, `css`, `js`, etc.) so Pri
 
 ## Workflow
 
-- Branch off `master`; one feature per branch
+- Branch off `main`; one feature per branch
 - One pattern = one PR. Bundle code-block, asset and config changes into their own PRs (don't co-mingle with article content)
 - Run `npm run format` before staging — see the **Formatting** section above
-- Default base branch: `master`
+- Default base branch: `main`
 - The repo has two remotes: `origin` (Speed-Patterns/speed-patterns, the canonical one) and `alex`. Push to `origin` unless told otherwise
 - Don't force-push without explicit user approval; if rebasing a shared branch is needed, use `--force-with-lease`
 

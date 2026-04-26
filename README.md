@@ -11,4 +11,4 @@ High level technical solution might also be provided, but linking to outside tec
 # Contributing
 
 Project is open for everybody to contribute. Please help us cover as many use-cases and known solutions to speed design problems as possible.
-See [Contributing Guide](https://github.com/Speed-Patterns/speed-patterns/tree/master/CONTRIBUTING.md) to see how you can help.
+See [Contributing Guide](https://github.com/Speed-Patterns/speed-patterns/tree/main/CONTRIBUTING.md) to see how you can help.

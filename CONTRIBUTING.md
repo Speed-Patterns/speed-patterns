@@ -18,7 +18,7 @@ You can mark submissions that are in early stages of definition and need more ac
 
 By contributing to this project, you agree that your work will be shared under [Creative Commons Attribution 4.0 International Lincense](https://creativecommons.org/licenses/by/4.0/) [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
-Please help us attribute your work properly by adding your name to [CONTRIBUTORS](https://github.com/Speed-Patterns/speed-patterns/blob/master/CONTRIBUTORS.md) file
+Please help us attribute your work properly by adding your name to [CONTRIBUTORS](https://github.com/Speed-Patterns/speed-patterns/blob/main/CONTRIBUTORS.md) file
 
 ## 2. Help formulating new patterns
 
@@ -26,7 +26,7 @@ It takes some good conversation to describe a design pattern to make sure it is 
 
 ## 3. Add new pattern page
 
-When it is clear that the pattern is well established and you collected feedback from other members and maintainers, create a new pattern file in [`/_patterns/`](https://github.com/Speed-Patterns/speed-patterns/tree/master/_patterns) folder and supporting assets in [`/assets/`](https://github.com/Speed-Patterns/speed-patterns/tree/master/assets) folder and open a pull request.
+When it is clear that the pattern is well established and you collected feedback from other members and maintainers, create a new pattern file in [`/_patterns/`](https://github.com/Speed-Patterns/speed-patterns/tree/main/_patterns) folder and supporting assets in [`/assets/`](https://github.com/Speed-Patterns/speed-patterns/tree/main/assets) folder and open a pull request.
 Please include a link to existing pattern issues to help maintainers get context of the previous conversation.
 
 ## 4. Celebrate and share
