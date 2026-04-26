@@ -25,16 +25,16 @@
     <rect x="0" y="0" width="320" height="100" fill="#fff" stroke="#000" stroke-width="2"/>
     <text x="10" y="14" font-family="Arial, sans-serif" font-size="12" fill="#000" font-weight="bold">Page paint timeline</text>
     <text x="6" y="35" font-family="Arial, sans-serif" font-size="10" fill="#000">Paint</text>
-    <rect x="40" y="24" width="22" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
-    <rect x="78" y="24" width="14" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
-    <rect x="120" y="24" width="40" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
+    <rect x="40" y="24" width="20" height="14" fill="#0d8043" stroke="#000" stroke-width="1"/>
+    <text x="50" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#fff" font-weight="bold">CSS</text>
+    <rect x="60" y="24" width="24" height="14" fill="#a142f4" stroke="#000" stroke-width="1"/>
     <text x="14" y="57" font-family="Arial, sans-serif" font-size="10" fill="#000">JS</text>
     <rect x="40" y="46" width="120" height="14" fill="#ffd54f" stroke="#000" stroke-width="1"/>
-    <text x="100" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">JS loading</text>
+    <text x="125" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">JS loading</text>
     <rect x="160" y="46" width="80" height="14" fill="#ef5350" stroke="#000" stroke-width="1"/>
     <text x="200" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#000">long task</text>
-    <line x1="160" y1="20" x2="160" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
-    <text x="160" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">visible</text>
+    <line x1="84" y1="20" x2="84" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="84" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">visible</text>
     <line x1="240" y1="20" x2="240" y2="66" stroke="#000" stroke-width="1" stroke-dasharray="3 2"/>
     <text x="240" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#000" font-weight="bold">interactive</text>
   </g>
