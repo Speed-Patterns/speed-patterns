@@ -36,11 +36,10 @@ Give the user visible feedback the instant their action begins, separate from th
 
 ### Common acknowledgments
 
-- **Disable the trigger.** A submitted button that immediately becomes disabled prevents double submission and signals "we got it"
-- **Change the label.** "Submit" → "Submitting…" or "Save" → "Saving…" tells the user exactly what is happening
-- **Show a small inline indicator.** A subtle spinner _next to_ the action (not in place of the page content) confirms work is in progress
-- **Pre-clear the destination area.** For navigation that will replace a content region, clear the old content immediately so the user sees the page begin to respond, even before the new content arrives
-- **Move attention to the next state.** Modals can begin their open animation immediately, even if their content streams in
+- **Disable the trigger:** A submitted button that immediately becomes disabled prevents double submission and signals "we got it"
+- **Change the label:** "Submit" → "Submitting…" or "Save" → "Saving…" tells the user exactly what is happening
+- **Pre-clear the destination area:** For navigation that will replace a content region, clear the old content immediately so the user sees the page begin to respond, even before the new content arrives
+- **Move attention to the next state:** Modals can begin their open animation immediately, even if their content streams in
 
 ## Guidelines
 
