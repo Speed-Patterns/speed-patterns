@@ -15,7 +15,6 @@
 }
 
 @media screen and (max-width: 110em) {
-
     .textimagepair {
         flex-direction: column;
     }
@@ -24,7 +23,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 .callout {
@@ -99,7 +97,7 @@ nav li {
 header {
     display: flex;
     align-items: center;
-    background-color: #2D3866;
+    background-color: #2d3866;
     padding: 1em;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
@@ -118,11 +116,11 @@ header a:visited {
 }
 
 a {
-    color: #4F63B3;
+    color: #4f63b3;
 }
 
 a:visited {
-    color: #2D3866;
+    color: #2d3866;
 }
 
 main {
@@ -150,10 +148,10 @@ pre {
 /* Code blocks */
 pre[class*="language-"] {
     position: relative;
-    background-color: #2D3866;
+    background-color: #2d3866;
     color: #fff4de;
     border: solid 1px #1c2347;
-    border-left: solid 0.5em #4F63B3;
+    border-left: solid 0.5em #4f63b3;
     border-radius: 6px;
     padding: 1em 1.25em;
     margin: 1.5em 0;
@@ -272,7 +270,10 @@ pre[class*="language-"] code {
     font-size: 0.8em;
     line-height: 1;
     cursor: pointer;
-    transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+    transition:
+        background-color 0.15s,
+        border-color 0.15s,
+        color 0.15s;
 }
 
 .copy-btn:hover,
@@ -283,13 +284,12 @@ pre[class*="language-"] code {
 }
 
 .copy-btn.copied {
-    background-color: #4F63B3;
-    border-color: #4F63B3;
+    background-color: #4f63b3;
+    border-color: #4f63b3;
     color: #fff4de;
 }
 
 @media screen and (min-width: 75em) {
-
     .mobile-hidden {
         display: block;
     }
@@ -337,5 +337,4 @@ pre[class*="language-"] code {
     .burger {
         display: none;
     }
-
 }

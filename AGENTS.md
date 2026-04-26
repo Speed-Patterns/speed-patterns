@@ -99,7 +99,7 @@ Technical detail belongs at the end of the article. Lead with UX/design content;
   - Borders, arrows and labels: black `#000`
   - Typography: sans-serif (Arial / system stack)
   - Place a low-opacity `SPEEDPATTERNS.COM` wordmark in a corner for diagrams that may be reused outside the site
-- The site chrome (header, nav, sidebar) uses a separate warm-beige palette (`#fff4de`, `#f0e6d3`, `#a98c5a`, `#2D3866`, `#4F63B3`) — that palette is for the page itself, not for in-article diagrams
+- The site chrome (header, nav, sidebar) uses a separate warm-beige palette (`#fff4de`, `#f0e6d3`, `#a98c5a`, `#2d3866`, `#4f63b3`) — that palette is for the page itself, not for in-article diagrams
 - For new patterns, the site-wide [src/assets/speed_patterns_og_image.jpg](src/assets/speed_patterns_og_image.jpg) is an acceptable temporary `og_image` until a per-pattern one is designed
 
 ## Code blocks
