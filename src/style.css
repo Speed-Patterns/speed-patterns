@@ -33,6 +33,21 @@
     border-radius: 5px;
 }
 
+figure {
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
 header span {
     display: flex;
     align-items: center;
