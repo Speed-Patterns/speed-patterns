@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#fff4de"/>
+  <text x="200" y="36" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#5a4a2e" font-weight="bold">Visible should mean usable</text>
+  <g transform="translate(40,72)">
+    <rect x="0" y="0" width="320" height="60" fill="#fff8eb" stroke="#a98c5a" stroke-width="2" rx="6"/>
+    <text x="10" y="22" font-family="sans-serif" font-size="12" fill="#5a4a2e" font-weight="bold">Page paint timeline</text>
+    <rect x="10" y="32" width="60" height="14" fill="#a98c5a"/>
+    <rect x="74" y="32" width="80" height="14" fill="#c9b48a"/>
+    <rect x="158" y="32" width="60" height="14" fill="#a98c5a"/>
+    <rect x="222" y="32" width="40" height="14" fill="#c9b48a"/>
+    <rect x="266" y="32" width="44" height="14" fill="#a98c5a"/>
+    <text x="40" y="58" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5a4a2e">paint</text>
+    <text x="114" y="58" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#a3550e">long task</text>
+    <text x="188" y="58" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5a4a2e">paint</text>
+    <text x="242" y="58" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#a3550e">long task</text>
+    <text x="288" y="58" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5a4a2e">idle</text>
+  </g>
+  <g transform="translate(40,170)">
+    <circle cx="40" cy="40" r="32" fill="#fff8eb" stroke="#a98c5a" stroke-width="3"/>
+    <circle cx="40" cy="40" r="12" fill="#a98c5a"/>
+    <text x="40" y="92" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a4a2e" font-weight="bold">SEE</text>
+    <text x="40" y="106" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5a4a2e">page is painted</text>
+  </g>
+  <g stroke="#a98c5a" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M120 210 L160 210" />
+    <path d="M120 210 L160 210" stroke-dasharray="4 4"/>
+  </g>
+  <g transform="translate(170,170)">
+    <rect x="0" y="20" width="120" height="40" rx="6" fill="#a98c5a"/>
+    <text x="60" y="46" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fff8eb" font-weight="bold">Click me</text>
+    <text x="60" y="92" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a4a2e" font-weight="bold">DO</text>
+    <text x="60" y="106" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5a4a2e">page should respond</text>
+  </g>
+  <g transform="translate(310,170)">
+    <text x="22" y="46" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#a3550e" font-weight="bold">!</text>
+    <text x="22" y="92" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a4a2e" font-weight="bold">but...</text>
+    <text x="22" y="106" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5a4a2e">JS blocking</text>
+  </g>
+</svg>
