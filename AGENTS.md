@@ -21,6 +21,13 @@ Common commands:
 
 - `npm run start` — local dev server with live reload
 - `npm run build` — one-shot build into `_site/`
+- `npm run format` — run [Prettier](https://prettier.io/) across the project
+
+## Formatting
+
+Run `npm run format` after making any changes to project files. Prettier is configured to format Markdown, CSS, JS, JSON and YAML; Nunjucks templates, SVG assets, the build output and `package-lock.json` are excluded via `.prettierignore`.
+
+This is a hard rule — every commit on this branch should be formatted. If you make a change to a pattern article, the issue template, AGENTS.md, CONTRIBUTING.md, the stylesheet, the Eleventy config or any other Prettier-supported file, run `npm run format` before staging.
 
 ## Repo layout
 
@@ -109,6 +116,7 @@ Always tag fenced code blocks with a language (`html`, `css`, `js`, etc.) so Pri
 
 - Branch off `master`; one feature per branch
 - One pattern = one PR. Bundle code-block, asset and config changes into their own PRs (don't co-mingle with article content)
+- Run `npm run format` before staging — see the **Formatting** section above
 - Default base branch: `master`
 - The repo has two remotes: `origin` (Speed-Patterns/speed-patterns, the canonical one) and `alex`. Push to `origin` unless told otherwise
 - Don't force-push without explicit user approval; if rebasing a shared branch is needed, use `--force-with-lease`
