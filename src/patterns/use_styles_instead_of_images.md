@@ -15,9 +15,9 @@ Visual effects that originate in design tools — drop shadows, gradients, round
 
 A typical handoff path looks like this: the designer builds a mockup in Figma or Photoshop, exports the visual elements as PNG or JPEG, and the developer drops the exports into the page. The result _looks_ right, but it's expensive:
 
-- A drop shadow exported as a PNG can be 40–100 KB. The same shadow in CSS is a few bytes.
-- A button rendered as an image is one network request, one rasterization step, and one fixed resolution. The same button in CSS scales to any DPI for free.
-- A "hero" image with overlaid text saves time at design handoff but binds the text into the pixels — making it un-translatable, un-selectable, and bad for SEO.
+- A drop shadow exported as a PNG can be 40–100 KB. The same shadow in CSS is a few bytes
+- A button rendered as an image is one network request, one rasterization step, and one fixed resolution. The same button in CSS scales to any DPI for free
+- A "hero" image with overlaid text saves time at design handoff but binds the text into the pixels — making it un-translatable, un-selectable, and bad for SEO
 
 Every image is a network round-trip, a decode step on the user's CPU, and a layout consideration. Avoiding the round-trip entirely is almost always cheaper.
 
@@ -42,8 +42,8 @@ If your designer says "I want this corner rounded with a soft shadow and a thin 
 
 A common offender is a hero banner that combines a photographic image with overlaid text. Designers often deliver this as a single rendered image — and the result is bad on both axes:
 
-- **PNG** preserves the text edges crisply but bloats the photographic part.
-- **JPEG** compresses the photo well but introduces visible artifacts around the text.
+- **PNG** preserves the text edges crisply but bloats the photographic part
+- **JPEG** compresses the photo well but introduces visible artifacts around the text
 
 The right answer is to split the layers: keep the photo as a compressed image and render the text as real HTML positioned over it. The photo can be aggressively compressed (it's only being judged as a photo). The text stays crisp, accessible, responsive, and editable without shipping a new image.
 
@@ -51,24 +51,24 @@ The right answer is to split the layers: keep the photo as a compressed image an
 
 CSS rules are part of the stylesheet — already cached, already parsed, already applied to many elements. Replacing an image with CSS:
 
-- Eliminates a network request (or several, if multiple sizes were being served).
-- Eliminates the decode and rasterization cost.
-- Lets the browser scale the visual to any device pixel ratio without blurriness.
-- Allows hover, focus and animation states without preloading additional image variants.
-- Keeps text editable and indexable.
+- Eliminates a network request (or several, if multiple sizes were being served)
+- Eliminates the decode and rasterization cost
+- Lets the browser scale the visual to any device pixel ratio without blurriness
+- Allows hover, focus and animation states without preloading additional image variants
+- Keeps text editable and indexable
 
 ## Guidelines
 
-- **Default to CSS.** Make "could this be done in CSS?" a routine question during design review, not an afterthought during optimization.
-- **Use SVG for icons and simple illustrations.** Inline SVG can be styled with CSS and animated, and stays sharp at every resolution.
-- **Reserve raster images for actual photographs** — and use modern formats (`AVIF`, `WebP`) with proper `srcset` and `sizes` for responsiveness.
-- **Don't ship text as pixels.** Text is content; it belongs in HTML.
-- **Tooling helps.** Modern CSS supports complex effects that were once only achievable with images — re-investigate the boundary periodically.
+- **Default to CSS.** Make "could this be done in CSS?" a routine question during design review, not an afterthought during optimization
+- **Use SVG for icons and simple illustrations.** Inline SVG can be styled with CSS and animated, and stays sharp at every resolution
+- **Reserve raster images for actual photographs** — and use modern formats (`AVIF`, `WebP`) with proper `srcset` and `sizes` for responsiveness
+- **Don't ship text as pixels.** Text is content; it belongs in HTML
+- **Tooling helps.** Modern CSS supports complex effects that were once only achievable with images — re-investigate the boundary periodically
 
 ## Related Patterns
 
-- [Fast Start](/patterns/fast_start/) — fewer bytes and fewer requests directly improve First Contentful Paint.
-- [Immutable Layout](/patterns/immutable_layout/) — CSS-rendered visuals know their dimensions immediately, so they don't shift.
+- [Fast Start](/patterns/fast_start/) — fewer bytes and fewer requests directly improve First Contentful Paint
+- [Immutable Layout](/patterns/immutable_layout/) — CSS-rendered visuals know their dimensions immediately, so they don't shift
 
 ## Technical Implementation
 
