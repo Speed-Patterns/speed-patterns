@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 400 240" width="400" height="240">
   <rect width="400" height="300" fill="#fff"/>
   <rect x="0" y="0" width="200" height="300" fill="#f11300" fill-opacity="0.1"/>
   <rect x="200" y="0" width="200" height="300" fill="#00f13e" fill-opacity="0.2"/>
-  <text x="200" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#000" font-weight="bold">Mask the wait with motion</text>
   <g transform="translate(40,90)">
     <rect x="0" y="0" width="120" height="120" fill="#ffa400" stroke="#000" stroke-width="3"/>
     <text x="60" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#000" font-weight="bold">Loading...</text>

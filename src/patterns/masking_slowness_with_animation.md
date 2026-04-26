@@ -21,8 +21,10 @@ Even when the underlying technical delay is the same, an experience that snaps f
 
 ## Solution
 
+Without animation the wait reads as an abrupt pause; a short, purposeful transition turns the same delay into smooth arrival.
+
 <figure>
-<figcaption>Without animation the wait reads as an abrupt pause; a short, purposeful transition turns the same delay into smooth arrival.</figcaption>
+<figcaption>Mask the wait with motion</figcaption>
 <img src="/assets/masking_slowness_thumbnail.svg" width="400" alt="An orange 'Loading…' box on the left and a yellow content panel on the right, connected by a curved blue motion line"/>
 </figure>
 
