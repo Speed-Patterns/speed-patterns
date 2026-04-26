@@ -92,8 +92,7 @@ Technical detail belongs at the end of the article. Lead with UX/design content;
 
 - Images live in [src/assets/](src/assets/) and are passthrough-copied by Eleventy
 - Prefer SVG for diagrammatic thumbnails and inline diagrams. Follow the visual language of the canonical example, [src/assets/skeletal_design_perception_time_diagram.svg](src/assets/skeletal_design_perception_time_diagram.svg):
-  - White background (`#fff`)
-  - Primary fills: yellow `#fd0` and orange `#ffa400` for content / state boxes
+  - White background (`#fff`); content boxes are white with a black border, not filled with a brand color
   - Zone tints used at low opacity (~0.1–0.2): green `#00f13e` for the "with pattern" / good zone and red `#f11300` for the "without pattern" / bad zone
   - Accent line color: blue `#0085f1` (e.g. for time / progression arrows)
   - Borders, arrows and labels: black `#000`
