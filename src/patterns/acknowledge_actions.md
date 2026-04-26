@@ -29,19 +29,19 @@ Give the user visible feedback the instant their action begins, separate from th
 
 ### Common acknowledgments
 
-- **Disable the trigger.** A submitted button that immediately becomes disabled prevents double submission and signals "we got it."
-- **Change the label.** "Submit" → "Submitting…" or "Save" → "Saving…" tells the user exactly what is happening.
-- **Show a small inline indicator.** A subtle spinner _next to_ the action (not in place of the page content) confirms work is in progress.
-- **Pre-clear the destination area.** For navigation that will replace a content region, clear the old content immediately so the user sees the page begin to respond, even before the new content arrives.
-- **Move attention to the next state.** Modals can begin their open animation immediately, even if their content streams in.
+- **Disable the trigger.** A submitted button that immediately becomes disabled prevents double submission and signals "we got it"
+- **Change the label.** "Submit" → "Submitting…" or "Save" → "Saving…" tells the user exactly what is happening
+- **Show a small inline indicator.** A subtle spinner _next to_ the action (not in place of the page content) confirms work is in progress
+- **Pre-clear the destination area.** For navigation that will replace a content region, clear the old content immediately so the user sees the page begin to respond, even before the new content arrives
+- **Move attention to the next state.** Modals can begin their open animation immediately, even if their content streams in
 
 ## Guidelines
 
-- **Acknowledge in the first frame.** The acknowledgment must happen on the same paint as the input event — not after a network round-trip. If you wait for the server, you've already lost the moment.
-- **Acknowledge in place.** Show the feedback _on or next to_ the element the user interacted with, not in a distant corner of the page.
-- **Don't lie about progress.** Use indeterminate indicators when you don't know how long the operation will take; only show progress bars when you actually have progress information.
-- **Re-enable carefully.** Once the operation completes (success or error), restore the trigger to a usable state and tell the user what happened.
-- **Don't replace acknowledgment with a full-page spinner.** Spinners on top of working content are a heavy hammer — see [Don't Use Spinners](/patterns/dont_use_spinners/).
+- **Acknowledge in the first frame.** The acknowledgment must happen on the same paint as the input event — not after a network round-trip. If you wait for the server, you've already lost the moment
+- **Acknowledge in place.** Show the feedback _on or next to_ the element the user interacted with, not in a distant corner of the page
+- **Don't lie about progress.** Use indeterminate indicators when you don't know how long the operation will take; only show progress bars when you actually have progress information
+- **Re-enable carefully.** Once the operation completes (success or error), restore the trigger to a usable state and tell the user what happened
+- **Don't replace acknowledgment with a full-page spinner.** Spinners on top of working content are a heavy hammer — see [Don't Use Spinners](/patterns/dont_use_spinners/)
 
 ## Why This Works
 
@@ -49,9 +49,9 @@ The technical work behind the action hasn't gotten any faster, but the experienc
 
 ## Related Patterns
 
-- [Masking Slowness With Animation](/patterns/masking_slowness_with_animation/) — pairing acknowledgment with a transition to occupy the wait.
-- [Don't Use Spinners](/patterns/dont_use_spinners/) — preferred alternatives for longer waits.
-- [Skeletal Designs](/patterns/skeletal_designs/) — for acknowledging navigation that loads a whole new view.
+- [Masking Slowness With Animation](/patterns/masking_slowness_with_animation/) — pairing acknowledgment with a transition to occupy the wait
+- [Don't Use Spinners](/patterns/dont_use_spinners/) — preferred alternatives for longer waits
+- [Skeletal Designs](/patterns/skeletal_designs/) — for acknowledging navigation that loads a whole new view
 
 ## Technical Implementation
 
