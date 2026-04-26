@@ -87,11 +87,19 @@ The mixed-hero anti-pattern is fixed by separating the photographic layer from t
 ```
 
 ```css
-.hero { position: relative; }
-.hero__photo { width: 100%; height: 100%; object-fit: cover; }
+.hero {
+  position: relative;
+}
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .hero__copy {
-  position: absolute; inset: 0;
-  display: grid; place-content: center;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
   color: white;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
