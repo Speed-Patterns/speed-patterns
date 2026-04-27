@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/slow_paint_filmstrip.png
 og_image: /assets/fast_start_og_image.jpg
 order: 1
+date: 2017-11-26
+authors:
+  - name: Sergey Chernyshev
+    url: https://www.sergeychernyshev.com/
 ---
 
 Before user can start the experience, there is an inevitable delay as user's browser goes away from previous view to the current view.

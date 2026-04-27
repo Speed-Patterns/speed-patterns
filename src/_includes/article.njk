@@ -2,6 +2,16 @@
 
 {% block title %}
     <h1>{{title}}</h1>
+    {% if authors or date %}
+        <p class="article-meta">
+            {% if authors %}
+                By
+                {% for author in authors %}{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
+            {% endif %}
+            {% if authors and date %} · {% endif %}
+            {% if date %}<time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% endif %}
+        </p>
+    {% endif %}
 {% endblock %}
 
 {% block og %}

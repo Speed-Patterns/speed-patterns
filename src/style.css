@@ -57,6 +57,13 @@ header span {
     margin-left: 0.5em;
 }
 
+.article-meta {
+    color: #5a5a5a;
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+}
+
 .speed-pattern {
     margin-top: 1em;
 }
