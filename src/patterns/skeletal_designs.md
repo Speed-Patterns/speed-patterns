@@ -5,6 +5,12 @@ tags: pattern
 thumbnail: /assets/skeletal_design_perception_time_diagram.svg
 og_image: /assets/skeletal_designs_og_image.png
 order: 3
+date: 2024-02-21
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
+    - name: Alexander Chernyshev
+      url: https://alexchernyshev.com/
 ---
 
 Technique introduced by Luke Wroblewsky and used by many sites, including Facebook's and LinkedIn's newsfeeds can be utilized to indicate progress and provide visual cue to what user should expect reducing cognitive load and user's frustration.

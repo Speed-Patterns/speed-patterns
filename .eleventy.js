@@ -23,6 +23,21 @@ module.exports = function (eleventyConfig) {
     return markdownIt({ html: true }).render(content);
   });
 
+  eleventyConfig.addFilter("readableDate", function (dateObj) {
+    const d = dateObj instanceof Date ? dateObj : new Date(dateObj);
+    return d.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
+    });
+  });
+
+  eleventyConfig.addFilter("isoDate", function (dateObj) {
+    const d = dateObj instanceof Date ? dateObj : new Date(dateObj);
+    return d.toISOString().slice(0, 10);
+  });
+
   return {
     dir: {
       input: "src",
