@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/no_spinners.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 9
+date: 2017-12-05
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 The animated circular spinner has become the default progress indicator on the web. It's also the wrong tool in nearly every case it's used. Spinners communicate almost no useful information, and their default presence often signals that no thought was given to how the experience handles waiting at all.
