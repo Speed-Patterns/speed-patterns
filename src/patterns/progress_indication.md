@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/progress_indication_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 12
+ai_assisted: true
 date: 2024-04-23
 authors:
     - name: Alexander Chernyshev
