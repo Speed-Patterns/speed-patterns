@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/enhance_fonts_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 6
+ai_assisted: true
 date: 2017-12-04
 authors:
     - name: Sergey Chernyshev
