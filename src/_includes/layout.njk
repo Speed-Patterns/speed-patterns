@@ -94,6 +94,7 @@
         <main>
             {% block title %}{% endblock %}
             {{ content | safe }}
+            {% block article_footer %}{% endblock %}
         </main>
 
         <aside class="sidebar">

@@ -2,7 +2,7 @@
 
 {% block title %}
     <h1>{{title}}</h1>
-    {% if authors or date %}
+    {% if authors or date or ai_assisted %}
         <p class="article-meta">
             {% if authors %}
                 By
@@ -10,7 +10,16 @@
             {% endif %}
             {% if authors and date %} · {% endif %}
             {% if date %}<time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>{% endif %}
+            {% if ai_assisted %}{% if authors or date %} · {% endif %}<a href="#ai-assistance">Assisted by AI</a>{% endif %}
         </p>
+    {% endif %}
+{% endblock %}
+
+{% block article_footer %}
+    {% if ai_assisted %}
+        <aside id="ai-assistance" class="ai-assistance">
+            <p>Human authors contributed the core concepts and reviewed the article and facts. AI assisted with wordsmithing and creating illustrations.</p>
+        </aside>
     {% endif %}
 {% endblock %}
 

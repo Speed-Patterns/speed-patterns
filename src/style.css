@@ -64,6 +64,19 @@ header span {
     margin-bottom: 1.5em;
 }
 
+.ai-assistance {
+    margin-top: 2em;
+    padding: 1em 1.25em;
+    border-left: 3px solid #c9b894;
+    background-color: #faf6ec;
+    color: #5a5a5a;
+    font-size: 0.9em;
+}
+
+.ai-assistance p {
+    margin: 0;
+}
+
 .speed-pattern {
     margin-top: 1em;
 }
