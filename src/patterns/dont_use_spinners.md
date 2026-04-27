@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/no_spinners.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 9
+ai_assisted: true
 date: 2017-12-05
 authors:
     - name: Sergey Chernyshev
