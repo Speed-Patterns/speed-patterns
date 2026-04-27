@@ -5,6 +5,12 @@ tags: pattern
 thumbnail: /assets/optimistic_actions_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 14
+date: 2020-01-06
+authors:
+    - name: Joseph Gannon
+      url: https://www.linkedin.com/in/environmentalux/
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 Some user actions don't need to wait for the server to feel complete. Clipping a coupon, marking a task done, voting on a poll, adding to a wishlist — for actions like these, the user has formed an intent and moved on before the request even leaves the device. Designing the action flow around that fact is what turns a usable feature into one that feels instantaneous.
