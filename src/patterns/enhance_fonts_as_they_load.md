@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/enhance_fonts_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 6
+date: 2017-12-04
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 Custom web fonts are a powerful brand and design tool, but they cost the user time. A font file has to be downloaded, parsed and applied before any text styled with it can be rendered. Until then, the browser must decide what to do — and the wrong default ruins the reading experience.
