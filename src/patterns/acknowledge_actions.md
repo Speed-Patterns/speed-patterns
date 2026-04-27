@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/acknowledge_actions_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 7
+date: 2017-12-04
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 When a user clicks a button, taps a link, or submits a form, they expect immediate feedback. If the system takes longer than about 100ms to respond, an unacknowledged action becomes a usability problem — and a performance problem.
