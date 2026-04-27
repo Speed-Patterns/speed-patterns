@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/optimistic_actions_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 14
+ai_assisted: true
 date: 2020-01-06
 authors:
     - name: Joseph Gannon
