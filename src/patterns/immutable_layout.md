@@ -7,10 +7,8 @@ og_image: /assets/immutable_layout_og_image.jpg
 order: 2
 date: 2017-11-26
 authors:
-    - name: Sergey Chernyshev
-      url: https://www.sergeychernyshev.com/
-    - name: Alexander Chernyshev
-      url: https://alexchernyshev.com/
+  - name: Sergey Chernyshev
+    url: https://www.sergeychernyshev.com/
 ---
 
 A common problem on web sites that use ads or other 3rd party display elements (widgets), but also manifests in regular websites is change in layout as page loads.
