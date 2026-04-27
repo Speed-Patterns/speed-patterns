@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/progress_indication_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 12
+date: 2024-04-23
+authors:
+    - name: Alexander Chernyshev
+      url: https://alexchernyshev.com/
 ---
 
 When work takes long enough that the user notices, "nothing visible is happening" stops being acceptable. Some form of progress indication is required — but the choice of which form has a much bigger impact on the experience than teams often realize.
