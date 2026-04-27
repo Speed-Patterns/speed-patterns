@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320" font-family="Arial, sans-serif">
+  <title>Optimistic Actions</title>
+  <desc>Two coupon lists side by side. The left list, labeled "without optimism", shows three coupons each in a "Clipping…" pending state with spinners. The right list, labeled "with optimism", shows the same three coupons each immediately marked "Clipped ✓".</desc>
+
+  <rect width="520" height="320" fill="#fff"/>
+
+  <text x="260" y="26" text-anchor="middle" font-size="14" fill="#000">Repetitive actions feel slow when each one waits</text>
+
+  <!-- Without optimism (left) -->
+  <g>
+    <rect x="20" y="48" width="220" height="240" fill="#f11300" fill-opacity="0.08" stroke="#000"/>
+    <text x="130" y="68" text-anchor="middle" font-size="13" fill="#000">without optimism</text>
+
+    <!-- coupon row template -->
+    <g transform="translate(36,84)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">10% off — pasta</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">expires soon</text>
+      <rect x="120" y="10" width="60" height="20" fill="#fff" stroke="#000" stroke-dasharray="3 2"/>
+      <g transform="translate(132,20)">
+        <circle cx="0" cy="0" r="5" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.2"/>
+        <path d="M 0 -5 A 5 5 0 0 1 5 0" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="158" y="24" text-anchor="middle" font-size="9" fill="#000">…</text>
+    </g>
+    <g transform="translate(36,134)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">$2 off — bread</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">members only</text>
+      <rect x="120" y="10" width="60" height="20" fill="#fff" stroke="#000" stroke-dasharray="3 2"/>
+      <g transform="translate(132,20)">
+        <circle cx="0" cy="0" r="5" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.2"/>
+        <path d="M 0 -5 A 5 5 0 0 1 5 0" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="158" y="24" text-anchor="middle" font-size="9" fill="#000">…</text>
+    </g>
+    <g transform="translate(36,184)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">15% off — produce</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">ends Friday</text>
+      <rect x="120" y="10" width="60" height="20" fill="#fff" stroke="#000" stroke-dasharray="3 2"/>
+      <g transform="translate(132,20)">
+        <circle cx="0" cy="0" r="5" fill="none" stroke="#000" stroke-width="2" stroke-opacity="0.2"/>
+        <path d="M 0 -5 A 5 5 0 0 1 5 0" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="158" y="24" text-anchor="middle" font-size="9" fill="#000">…</text>
+    </g>
+
+    <text x="130" y="252" text-anchor="middle" font-size="11" fill="#000" opacity="0.7">each click waits for the server</text>
+    <text x="130" y="270" text-anchor="middle" font-size="11" fill="#000" opacity="0.7">cumulative delay across many clicks</text>
+  </g>
+
+  <!-- With optimism (right) -->
+  <g>
+    <rect x="280" y="48" width="220" height="240" fill="#00f13e" fill-opacity="0.12" stroke="#000"/>
+    <text x="390" y="68" text-anchor="middle" font-size="13" fill="#000">with optimism</text>
+
+    <g transform="translate(296,84)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">10% off — pasta</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">expires soon</text>
+      <rect x="120" y="10" width="60" height="20" fill="#00f13e" fill-opacity="0.25" stroke="#000"/>
+      <text x="150" y="24" text-anchor="middle" font-size="10" fill="#000">Clipped ✓</text>
+    </g>
+    <g transform="translate(296,134)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">$2 off — bread</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">members only</text>
+      <rect x="120" y="10" width="60" height="20" fill="#00f13e" fill-opacity="0.25" stroke="#000"/>
+      <text x="150" y="24" text-anchor="middle" font-size="10" fill="#000">Clipped ✓</text>
+    </g>
+    <g transform="translate(296,184)">
+      <rect x="0" y="0" width="188" height="40" fill="#fff" stroke="#000"/>
+      <text x="10" y="18" font-size="11" fill="#000">15% off — produce</text>
+      <text x="10" y="32" font-size="9" fill="#000" opacity="0.55">ends Friday</text>
+      <rect x="120" y="10" width="60" height="20" fill="#00f13e" fill-opacity="0.25" stroke="#000"/>
+      <text x="150" y="24" text-anchor="middle" font-size="10" fill="#000">Clipped ✓</text>
+    </g>
+
+    <text x="390" y="252" text-anchor="middle" font-size="11" fill="#000" opacity="0.7">success state lands instantly</text>
+    <text x="390" y="270" text-anchor="middle" font-size="11" fill="#000" opacity="0.7">requests reconcile in the background</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="510" y="312" text-anchor="end" font-size="9" fill="#000" opacity="0.25">SPEEDPATTERNS.COM</text>
+</svg>
