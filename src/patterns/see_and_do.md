@@ -5,6 +5,12 @@ tags: pattern
 thumbnail: /assets/see_and_do_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 10
+date: 2017-12-27
+authors:
+    - name: Joseph Gannon
+      url: https://www.linkedin.com/in/environmentalux/
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 When a user can see a button, they assume they can press it. When they can read a form field, they assume they can type into it. The mental model is simple: visible means usable. The web routinely violates this assumption — JavaScript is still parsing, hydrating, or executing long tasks during the seconds after first paint, and the page sits there looking interactive while not actually responding to input.
