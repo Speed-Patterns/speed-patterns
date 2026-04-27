@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/masking_slowness_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 4
+date: 2017-12-04
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 Some delays are unavoidable. Network round-trips, third-party APIs, expensive computations and view transitions all take time that no amount of optimization can fully eliminate.
