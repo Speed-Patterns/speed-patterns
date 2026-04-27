@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/convert_on_arrival_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 5
+date: 2017-12-04
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 Rich interactive components — carousels, tabbed panels, video players, maps, comparison sliders — are valuable, but they bring along a lot of code and data. Waiting for all of it to load before showing anything leaves the user staring at a blank container.
