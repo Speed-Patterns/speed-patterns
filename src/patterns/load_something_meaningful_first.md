@@ -5,6 +5,12 @@ tags: pattern
 thumbnail: /assets/load_meaningful_first_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 11
+date: 2018-01-08
+authors:
+    - name: Joseph Gannon
+      url: https://www.linkedin.com/in/environmentalux/
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 While a page loads, users want to see visible progress toward what they actually came for. Loading the header, navigation and footer first while the main content area sits empty does the opposite — it tells the user the page chrome is ready, but the thing they showed up for is still nowhere to be seen.
