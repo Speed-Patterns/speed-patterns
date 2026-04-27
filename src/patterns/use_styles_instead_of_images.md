@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/styles_not_images_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 8
+ai_assisted: true
 date: 2017-12-05
 authors:
     - name: Sergey Chernyshev
