@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/optimistic_rendering_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 13
+date: 2024-04-23
+authors:
+    - name: Alexander Chernyshev
+      url: https://alexchernyshev.com/
 ---
 
 When a user performs an action whose result is highly likely to succeed, you don't have to wait for the server to confirm before showing the new state. Render the success state in the UI as soon as the input lands — and reconcile silently in the background.
