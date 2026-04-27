@@ -5,6 +5,7 @@ tags: pattern
 thumbnail: /assets/see_and_do_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 10
+ai_assisted: true
 date: 2017-12-27
 authors:
     - name: Joseph Gannon
