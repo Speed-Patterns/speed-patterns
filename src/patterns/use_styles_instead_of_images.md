@@ -5,6 +5,10 @@ tags: pattern
 thumbnail: /assets/styles_not_images_thumbnail.svg
 og_image: /assets/speed_patterns_og_image.jpg
 order: 8
+date: 2017-12-05
+authors:
+    - name: Sergey Chernyshev
+      url: https://www.sergeychernyshev.com/
 ---
 
 Visual effects that originate in design tools — drop shadows, gradients, rounded corners, decorative borders, even small icons — are often shipped to the browser as raster images. They didn't have to be. CSS can express most of those effects directly in markup, at a tiny fraction of the byte cost and with no loss of fidelity.
