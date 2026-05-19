@@ -42,7 +42,7 @@ For a carousel:
 
 1. Render the **first slide** as a plain image (or HTML block) at the correct dimensions
 2. Once the carousel JavaScript and remaining slides are downloaded, **convert** the static element into the full interactive carousel — without any layout shift
-3. The transition from static to interactive should be visually invisible to the user
+3. The transition from static to interactive should be virtually invisible to the user
 
 The same pattern applies broadly:
 
@@ -81,5 +81,6 @@ Defer the upgrade until the page is no longer fighting for resources. Useful pri
 - `IntersectionObserver` — only upgrade components that are actually visible (or about to be)
 - Interaction-based loading — wait until the user hovers, focuses, or clicks the static placeholder before downloading the heavier interactive code
 - Dynamic `import()` — code-split the interactive implementation so it isn't part of the critical bundle
+- Static HTML and CSS implementation wrapped in a [custom element](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements). CSS can use `my-component:not(:defined)` for styles that should only be applied before interactivity.
 
 The static placeholder should be authored as plain HTML at the correct final dimensions; the upgrade script then mounts the interactive version into (or in place of) that container without changing its size.
