@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 400 240" width="400" height="240">
+  <rect width="400" height="300" fill="#fff"/>
+  <g transform="translate(35,70)">
+    <rect x="0" y="0" width="140" height="200" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="70" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#000" font-weight="bold">Headline</text>
+    <text x="70" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">readable system text</text>
+    <text x="70" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">while custom fonts load</text>
+    <text x="70" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">fallback (system)</text>
+  </g>
+  <g stroke="#000" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M185 165 L200 165"/>
+  </g>
+  <polygon points="200,160 215,165 200,170" fill="#000"/>
+  <g transform="translate(225,70)">
+    <rect x="0" y="0" width="140" height="200" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="70" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#000" font-weight="bold" font-style="italic">Headline</text>
+    <text x="70" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#000" font-style="italic">readable system text</text>
+    <text x="70" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#000" font-style="italic">while custom fonts load</text>
+    <text x="70" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#000">custom (loaded)</text>
+  </g>
+</svg>
