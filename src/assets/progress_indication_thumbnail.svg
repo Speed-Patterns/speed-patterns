@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360" font-family="Arial, sans-serif">
+  <title>Progress Indication</title>
+  <desc>A ranked list of four progress-indication options. From top: a determinate progress bar labeled "real progress (preferred)"; a skeleton layout labeled "structural placeholder"; a button with the label "Submitting…" labeled "action acknowledgment"; a circular spinner with a dashed red border labeled "spinner (last resort)".</desc>
+
+  <rect width="520" height="360" fill="#fff"/>
+
+  <text x="260" y="26" text-anchor="middle" font-size="14" fill="#000">Four ways to indicate progress</text>
+
+  <!-- 1. Real progress (preferred) -->
+  <g transform="translate(40,50)">
+    <rect x="0" y="0" width="440" height="56" fill="#00f13e" fill-opacity="0.12" stroke="#000"/>
+    <text x="14" y="20" font-size="12" fill="#000">1. Real progress (preferred)</text>
+    <!-- progress bar -->
+    <rect x="14" y="30" width="280" height="14" fill="#fff" stroke="#000"/>
+    <rect x="14" y="30" width="180" height="14" fill="#0085f1" opacity="0.7"/>
+    <text x="304" y="42" font-size="11" fill="#000">Uploading 3 of 8 — 64%</text>
+  </g>
+
+  <!-- 2. Structural placeholder -->
+  <g transform="translate(40,118)">
+    <rect x="0" y="0" width="440" height="64" fill="#00f13e" fill-opacity="0.08" stroke="#000"/>
+    <text x="14" y="20" font-size="12" fill="#000">2. Structural placeholder (Skeletal Designs)</text>
+    <!-- skeleton lines -->
+    <rect x="14" y="30" width="160" height="10" fill="#000" opacity="0.4"/>
+    <rect x="14" y="44" width="120" height="6" fill="#000" opacity="0.25"/>
+    <rect x="184" y="30" width="240" height="22" fill="#000" opacity="0.12" stroke="#000" stroke-opacity="0.3"/>
+  </g>
+
+  <!-- 3. Action acknowledgment -->
+  <g transform="translate(40,194)">
+    <rect x="0" y="0" width="440" height="58" fill="#00f13e" fill-opacity="0.06" stroke="#000"/>
+    <text x="14" y="20" font-size="12" fill="#000">3. Action acknowledgment</text>
+    <!-- button -->
+    <rect x="14" y="28" width="130" height="22" fill="#fff" stroke="#000" stroke-dasharray="3 2"/>
+    <text x="79" y="44" text-anchor="middle" font-size="11" fill="#000">Submitting…</text>
+    <!-- inline indicator dots -->
+    <circle cx="156" cy="39" r="2.5" fill="#000" opacity="0.7"/>
+    <circle cx="164" cy="39" r="2.5" fill="#000" opacity="0.45"/>
+    <circle cx="172" cy="39" r="2.5" fill="#000" opacity="0.2"/>
+    <text x="186" y="43" font-size="11" fill="#000" opacity="0.7">disabled while in flight</text>
+  </g>
+
+  <!-- 4. Spinner (last resort) -->
+  <g transform="translate(40,264)">
+    <rect x="0" y="0" width="440" height="68" fill="#f11300" fill-opacity="0.1" stroke="#000" stroke-dasharray="4 3"/>
+    <text x="14" y="20" font-size="12" fill="#000">4. Spinner — last resort</text>
+    <!-- spinner ring -->
+    <g transform="translate(40,46)">
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#000" stroke-width="3" stroke-opacity="0.2"/>
+      <path d="M 0 -12 A 12 12 0 0 1 12 0" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="64" y="42" font-size="11" fill="#000">no length, no shape, no message</text>
+    <text x="64" y="58" font-size="10" fill="#000" opacity="0.6">use only for very short or genuinely indeterminate waits</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="510" y="354" text-anchor="end" font-size="9" fill="#000" opacity="0.25">SPEEDPATTERNS.COM</text>
+</svg>
