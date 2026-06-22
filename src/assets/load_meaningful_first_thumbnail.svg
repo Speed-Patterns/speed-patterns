@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="520" height="320" font-family="Arial, sans-serif">
+  <title>Load Something Meaningful First</title>
+  <desc>Two browser-frame mockups: on the left, header and footer painted while the main content area is empty (red zone). On the right, the headline, image and lede are painted first while header and footer are still pending (green zone).</desc>
+
+  <rect width="520" height="320" fill="#fff"/>
+
+  <!-- Left: chrome-first (problem) -->
+  <g>
+    <rect x="20" y="40" width="220" height="240" fill="#f11300" fill-opacity="0.1" stroke="#000" stroke-width="1"/>
+    <text x="130" y="30" text-anchor="middle" font-size="13" fill="#000">chrome first</text>
+
+    <!-- header -->
+    <rect x="32" y="52" width="196" height="22" fill="#fff" stroke="#000"/>
+    <rect x="40" y="58" width="40" height="10" fill="#000"/>
+    <rect x="92" y="58" width="28" height="10" fill="#000"/>
+    <rect x="128" y="58" width="28" height="10" fill="#000"/>
+
+    <!-- empty content zone -->
+    <rect x="32" y="84" width="196" height="160" fill="#fff" stroke="#000" stroke-dasharray="4 3"/>
+    <text x="130" y="170" text-anchor="middle" font-size="12" fill="#000" opacity="0.55">empty</text>
+
+    <!-- footer -->
+    <rect x="32" y="252" width="196" height="18" fill="#fff" stroke="#000"/>
+    <rect x="40" y="258" width="60" height="6" fill="#000"/>
+    <rect x="108" y="258" width="60" height="6" fill="#000"/>
+  </g>
+
+  <!-- Right: meaningful-first (solution) -->
+  <g>
+    <rect x="280" y="40" width="220" height="240" fill="#00f13e" fill-opacity="0.12" stroke="#000" stroke-width="1"/>
+    <text x="390" y="30" text-anchor="middle" font-size="13" fill="#000">meaningful first</text>
+
+    <!-- header pending -->
+    <rect x="292" y="52" width="196" height="22" fill="#fff" stroke="#000" stroke-dasharray="4 3"/>
+    <text x="390" y="68" text-anchor="middle" font-size="9" fill="#000" opacity="0.55">header — pending</text>
+
+    <!-- meaningful content -->
+    <rect x="292" y="84" width="196" height="160" fill="#fff" stroke="#000"/>
+    <!-- headline -->
+    <rect x="300" y="92" width="180" height="14" fill="#000"/>
+    <!-- byline -->
+    <rect x="300" y="112" width="80" height="6" fill="#000" opacity="0.5"/>
+    <!-- hero image -->
+    <rect x="300" y="124" width="180" height="60" fill="#0085f1" opacity="0.25" stroke="#000"/>
+    <!-- body text -->
+    <rect x="300" y="190" width="180" height="6" fill="#000" opacity="0.6"/>
+    <rect x="300" y="200" width="170" height="6" fill="#000" opacity="0.6"/>
+    <rect x="300" y="210" width="160" height="6" fill="#000" opacity="0.6"/>
+    <rect x="300" y="220" width="120" height="6" fill="#000" opacity="0.6"/>
+
+    <!-- footer pending -->
+    <rect x="292" y="252" width="196" height="18" fill="#fff" stroke="#000" stroke-dasharray="4 3"/>
+    <text x="390" y="264" text-anchor="middle" font-size="9" fill="#000" opacity="0.55">footer — pending</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="510" y="312" text-anchor="end" font-size="9" fill="#000" opacity="0.25">SPEEDPATTERNS.COM</text>
+</svg>
