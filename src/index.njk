@@ -21,9 +21,12 @@ id: homepage
             </a>
         </h2>
         <p>{{post.data.page.excerpt | md | safe}}</p>
-        <a href="{{ post.url }}">
-            <img src="{{post.data.thumbnail}}">
-        </a>
+        {# all three are required together: without the dimensions the card would shift as the image loads #}
+        {% if post.data.thumbnail and post.data.thumbnail_width and post.data.thumbnail_height %}
+            <a href="{{ post.url }}">
+                <img src="{{post.data.thumbnail}}" width="{{post.data.thumbnail_width}}" height="{{post.data.thumbnail_height}}">
+            </a>
+        {% endif %}
     </section>
 
 {% endfor %}

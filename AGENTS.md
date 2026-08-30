@@ -58,6 +58,8 @@ layout: article.njk
 title: <Title Case Pattern Name>
 tags: pattern
 thumbnail: /assets/<pattern>_thumbnail.svg
+thumbnail_width: <intrinsic pixel width>
+thumbnail_height: <intrinsic pixel height>
 og_image: /assets/<pattern>_og_image.jpg
 order: <integer; controls homepage position>
 ---
@@ -66,6 +68,8 @@ order: <integer; controls homepage position>
 - The `tags: pattern` value adds the article to the `pattern` collection (used by the side nav and the ordered homepage list)
 - `order` is the homepage sort key; existing values are 1 (Fast Start), 2 (Immutable Layout), 3 (Skeletal Designs); new patterns continue from there
 - `thumbnail` shows on the homepage card; `og_image` powers the social-share preview
+- **Every article must define `thumbnail_width` and `thumbnail_height`** — the thumbnail's intrinsic pixel dimensions. They render as the `width` and `height` attributes on the homepage card image so the browser reserves the correct space before the image loads. This is a hard rule: an article missing them would make the homepage shift as thumbnails arrive, which is the very thing this site argues against. Re-measure and update them whenever a thumbnail is replaced — see **Assets** below
+- The three thumbnail fields are all-or-nothing: [src/index.njk](src/index.njk) renders the card image only when `thumbnail`, `thumbnail_width` and `thumbnail_height` are all set, so a missing dimension drops the thumbnail from the homepage rather than shipping an unsized image. If a new pattern's card shows no image, that guard is why — add the missing field
 
 ### Body structure
 
@@ -94,6 +98,10 @@ Technical detail belongs at the end of the article. Lead with UX/design content;
 ### Assets
 
 - Images live in [src/assets/](src/assets/) and are passthrough-copied by Eleventy
+- Measure a new thumbnail before adding it to an article's frontmatter: `sips -g pixelWidth -g pixelHeight src/assets/<file>` for raster images, or read the `viewBox` width and height off the `<svg>` element for SVGs
+- **Every `<img>` and `<video>` on the site carries `width` and `height`** — in articles, in the homepage cards and in the page chrome. This site argues against layout shift, so shipping unsized media on it is self-defeating. Use the real pixel dimensions (`ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 <file>` for video), never a percentage: `width="100%"` supplies no aspect ratio and reserves no space
+- For a figure that should span the text column, keep the real dimensions on the attributes and add `class="full-width"`; the rule in [src/style.css](src/style.css) sets `width: 100%` and the attributes supply the ratio, which is what lets the browser hold the space before the file arrives
+- The homepage rule `#homepage .speed-pattern img` in [src/style.css](src/style.css) sets `height: auto` so the `width`/`height` attributes reserve space without fighting the `max-width` / `max-height` caps — keep it there if you touch that rule
 - Prefer SVG for diagrammatic thumbnails and inline diagrams. Follow the visual language of the canonical example, [src/assets/skeletal_design_perception_time_diagram.svg](src/assets/skeletal_design_perception_time_diagram.svg):
   - White background (`#fff`); content boxes are white with a black border, not filled with a brand color
   - Zone tints used at low opacity (~0.1–0.2): green `#00f13e` for the "with pattern" / good zone and red `#f11300` for the "without pattern" / bad zone

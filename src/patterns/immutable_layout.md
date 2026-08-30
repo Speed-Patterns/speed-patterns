@@ -3,6 +3,8 @@ layout: article.njk
 title: Immutable Layout
 tags: pattern
 thumbnail: /assets/pushy_ads.gif
+thumbnail_width: 400
+thumbnail_height: 295
 og_image: /assets/immutable_layout_og_image.jpg
 order: 2
 date: 2017-11-26

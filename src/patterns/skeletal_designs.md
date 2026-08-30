@@ -3,14 +3,16 @@ layout: article.njk
 title: Skeletal Designs
 tags: pattern
 thumbnail: /assets/skeletal_design_perception_time_diagram.svg
+thumbnail_width: 1901
+thumbnail_height: 767
 og_image: /assets/skeletal_designs_og_image.png
 order: 3
 date: 2024-02-21
 authors:
-    - name: Sergey Chernyshev
-      url: https://www.sergeychernyshev.com/
-    - name: Alexander Chernyshev
-      url: https://alexchernyshev.com/
+  - name: Sergey Chernyshev
+    url: https://www.sergeychernyshev.com/
+  - name: Alexander Chernyshev
+    url: https://alexchernyshev.com/
 ---
 
 Technique introduced by Luke Wroblewsky and used by many sites, including Facebook's and LinkedIn's newsfeeds can be utilized to indicate progress and provide visual cue to what user should expect reducing cognitive load and user's frustration.
@@ -44,7 +46,7 @@ They allow users to do a first pass and understand the structure of the page ahe
 
 </div>
 
-<video muted autoplay loop playsinline>
+<video muted autoplay loop width="326" height="500" playsinline>
 <source src="/assets/skeletal_designs_diagrams/owlboi2.mp4" type="video/mp4"/>
 </video>
 
@@ -57,7 +59,7 @@ This helps reduce cognitive load for users, which reduces the stress of taking i
 It is not just about the technical aspects of loading the page. With this method we reduce the perception time of the user. Without this technique, the user is unable to prepare for navigating the page, and when it finally loads all at once they must spend more time parsing it before they can use it. Whereas with this technique, the user can be prepared to navigate the page once fully loaded, and needs less time to get their bearings and start using the page.
 
 <figure>
-<img src="/assets/skeletal_design_perception_time_diagram.svg" width="100%" alt="Diagram showing dirstribution of perception over loading time"/>
+<img class="full-width" src="/assets/skeletal_design_perception_time_diagram.svg" width="1901" height="767" alt="Diagram showing dirstribution of perception over loading time"/>
 <figcaption>Diagram showing dirstribution of perception over loading time</figcaption>
 </figure>
 
@@ -93,7 +95,7 @@ This unfortunate technique was popularized by the need to solve this issue on so
 
 </div>
 
-<video muted autoplay loop playsinline>
+<video muted autoplay loop width="350" height="676" playsinline>
 <source src="/assets/skeletal_designs_diagrams/spsd_social_media_feed_diagram_2image.mp4" type="video/mp4"/>
 </video>
 
