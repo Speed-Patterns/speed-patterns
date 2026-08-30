@@ -3,6 +3,8 @@ layout: article.njk
 title: Fast Start
 tags: pattern
 thumbnail: /assets/slow_paint_filmstrip.png
+thumbnail_width: 1013
+thumbnail_height: 177
 og_image: /assets/fast_start_og_image.jpg
 order: 1
 date: 2017-11-26
@@ -21,21 +23,21 @@ On this filmstrip, previous page is shown as white:
 
 <figure>
 <figcaption>Slow first paint filmstrip</figcaption>
-<img src="/assets/slow_paint_filmstrip.png" width="100%" alt="Slow first paint filmstrip"/>
+<img class="full-width" src="/assets/slow_paint_filmstrip.png" width="1013" height="177" alt="Slow first paint filmstrip"/>
 </figure>
 
 The usual cause for such delays are either a bottleneck of a first request for HTML page:
 
 <figure>
 <figcaption>Slow first request</figcaption>
-<img src="/assets/slow_first_request.png" width="100%" alt="Slow first request"/>
+<img class="full-width" src="/assets/slow_first_request.png" width="999" height="413" alt="Slow first request"/>
 </figure>
 
 Alternatively, delay can be caused by various render-blocking assets loaded on the page, like CSS stylesheets, fonts or pure rendering delays due to time-consuming layout and painting or JavaScript compilation and execution that compete for same CPU resources:
 
 <figure>
 <figcaption>Delayed first paint</figcaption>
-<img src="/assets/slow_first_paint.png" width="100%" alt="Delayed first paint"/>
+<img class="full-width" src="/assets/slow_first_paint.png" width="969" height="538" alt="Delayed first paint"/>
 </figure>
 
 ## Solution

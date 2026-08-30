@@ -44,6 +44,12 @@ figure img {
     margin: 0 auto;
 }
 
+/* figures that span the column; the width/height attributes supply the
+   aspect ratio so the space is reserved before the image arrives */
+figure img.full-width {
+    width: 100%;
+}
+
 figure figcaption {
     text-align: center;
 }
@@ -172,6 +178,9 @@ main {
 }
 
 #homepage .speed-pattern img {
+    /* width/height attributes reserve space before the image loads;
+       auto lets the constraints below scale it without distorting */
+    height: auto;
     max-width: 100%;
     max-height: 10em;
 }
