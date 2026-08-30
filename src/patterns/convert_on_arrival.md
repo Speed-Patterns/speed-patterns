@@ -3,13 +3,15 @@ layout: article.njk
 title: Convert on Arrival
 tags: pattern
 thumbnail: /assets/convert_on_arrival_thumbnail.svg
+thumbnail_width: 400
+thumbnail_height: 240
 og_image: /assets/speed_patterns_og_image.jpg
 order: 5
 ai_assisted: true
 date: 2017-12-04
 authors:
-    - name: Sergey Chernyshev
-      url: https://www.sergeychernyshev.com/
+  - name: Sergey Chernyshev
+    url: https://www.sergeychernyshev.com/
 ---
 
 Rich interactive components — carousels, tabbed panels, video players, maps, comparison sliders — are valuable, but they bring along a lot of code and data. Waiting for all of it to load before showing anything leaves the user staring at a blank container.
@@ -32,7 +34,7 @@ Until all of that arrives, the user either sees nothing, sees a spinner, or sees
 The static placeholder ships in the first HTML response; the carousel "converts" into its full interactive form once the supporting code arrives, without changing size.
 
 <figure>
-<img src="/assets/convert_on_arrival_thumbnail.svg" width="520" alt="Two carousel panels side by side: the left shows a single static slide labeled 'Slide 1', the right shows the same panel as a fully interactive carousel with arrows, position dots and a counter '1 / 5'"/>
+<img src="/assets/convert_on_arrival_thumbnail.svg" width="520" height="312" alt="Two carousel panels side by side: the left shows a single static slide labeled 'Slide 1', the right shows the same panel as a fully interactive carousel with arrows, position dots and a counter '1 / 5'"/>
 <figcaption>Static first, interactive later</figcaption>
 </figure>
 
