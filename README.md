@@ -1,6 +1,6 @@
 # Speed Patterns
 
-A collection of design patterns for fast web sites published on http://www.speedpatterns.com/
+A collection of design patterns for fast web sites published on https://www.speedpatterns.com/
 
 The goal of this project is to collect **product / UX / visual design patterns for creating fast web sites** and intended to help product managers, web designers and front-end developers plan speedy experiences from project inception or help articulate the improvements when performance issues are identified later down the road.
 
