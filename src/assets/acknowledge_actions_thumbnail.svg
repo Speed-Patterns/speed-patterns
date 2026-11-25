@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 70 400 110" width="400" height="110">
+  <rect width="400" height="300" fill="#fff"/>
+  <g transform="translate(40,100)">
+    <text x="70" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">idle button</text>
+    <rect x="0" y="0" width="140" height="56" rx="6" fill="#fafafa" stroke="#888" stroke-width="1"/>
+    <text x="70" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#000" font-weight="bold">Submit</text>
+  </g>
+  <g stroke="#000" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M190 128 L200 128"/>
+  </g>
+  <polygon points="200,123 215,128 200,133" fill="#000"/>
+  <g transform="translate(225,100)">
+    <text x="70" y="-8" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#000">acknowledged + disabled</text>
+    <rect x="0" y="0" width="140" height="56" rx="6" fill="#efefef" stroke="#c0c0c0" stroke-width="1"/>
+    <text x="70" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#888" font-weight="bold">Submitting…</text>
+  </g>
+</svg>
